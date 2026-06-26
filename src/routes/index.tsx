@@ -992,7 +992,7 @@ function Index() {
                 whether we are the right fit.
               </p>
               <p className="mt-3 text-sm font-medium text-navy">
-                We aim to reply within one working day.
+                We aim to reply within three working days.
               </p>
               <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
