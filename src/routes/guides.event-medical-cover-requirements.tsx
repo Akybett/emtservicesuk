@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import logoFull from "@/assets/logo-full.png";
 
-const TITLE = "Event Medical Cover Requirements — A UK Organiser's Guide | EMT Services";
+const TITLE = "Event Medical Cover: What Organisers Should Be Thinking About | EMT Services";
 const DESCRIPTION =
-  "How to determine the right level of event medical cover for your UK event using The Purple Guide. Practical risk-assessment breakdown for attendance, audience profile and activity.";
+  "A heads-up for UK event organisers on scoping medical cover — the factors that move the needle, the gotchas that catch people out, and when to pick up the phone.";
 const URL = "https://emtservicesuk.lovable.app/guides/event-medical-cover-requirements";
 
 export const Route = createFileRoute("/guides/event-medical-cover-requirements")({
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/guides/event-medical-cover-requirements")
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Event Medical Cover Requirements — A UK Organiser's Guide",
+          headline: "Event Medical Cover: What Organisers Should Be Thinking About",
           description: DESCRIPTION,
           author: { "@type": "Organization", name: "EMT Services" },
           publisher: { "@type": "Organization", name: "EMT Services" },
@@ -56,151 +56,83 @@ function GuidePage() {
 
       <main className="mx-auto max-w-3xl px-5 py-16 lg:px-8 lg:py-24">
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-          Guide · Event Planning
+          For event organisers
         </p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-          Event Medical Cover Requirements: A UK Organiser's Guide
+          Event Medical Cover: What You Should Be Thinking About
         </h1>
         <div className="mt-4 h-1 w-12 rounded-full bg-navy" />
         <p className="mt-6 text-lg text-muted-foreground">
-          Working out how much medical cover your event needs can feel opaque. This guide breaks
-          down the risk-assessment factors UK organisers use — drawn from The Purple Guide to
-          Health, Safety and Welfare at Music and Other Events — so you can plan with confidence
-          and brief providers accurately.
+          A short heads-up for organisers in the early planning stages. Not a checklist to
+          replace your risk assessment — just the things that tend to move the needle, and
+          the bits that catch people out.
         </p>
 
         <div className="mt-10 space-y-10 text-base leading-relaxed text-muted-foreground">
           <section>
-            <h2 className="text-xl font-semibold text-navy">Why event medical cover matters</h2>
+            <h2 className="text-xl font-semibold text-navy">Start with the bigger picture</h2>
             <p className="mt-3">
-              Under the Health and Safety at Work etc. Act 1974 and the Management of Health and
-              Safety at Work Regulations 1999, event organisers have a legal duty to protect
-              attendees, staff, contractors and the public. Adequate on-site medical provision is
-              a core part of that duty — and licensing authorities and Safety Advisory Groups
-              (SAGs) will expect to see a documented rationale for the cover you've booked.
+              Medical cover for a UK event is shaped by The Purple Guide and your local Safety
+              Advisory Group. Numbers on a page only get you so far — what matters is whether
+              your provision matches the event you are actually running, on the day, in that
+              venue, with that crowd.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-navy">The Purple Guide scoring model</h2>
+            <h2 className="text-xl font-semibold text-navy">What moves the needle</h2>
             <p className="mt-3">
-              Chapter 14 of The Purple Guide sets out a points-based calculator that scores an
-              event across risk factors and translates the total into recommended resources
-              (first aiders, ambulance technicians, paramedics, treatment centres and ambulances).
-              The score is a starting point, not a ceiling — it should always be reviewed against
-              your specific risk assessment.
-            </p>
-            <p className="mt-3">
-              The headline factors fall into three groups: <strong>attendance</strong>,
-              <strong> audience profile</strong>, and <strong>event nature and hazards</strong>.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-navy">1. Attendance</h2>
-            <p className="mt-3">
-              The scoring rises with peak crowd size. A village fete of 500 people sits in a
-              very different bracket to a 25,000-capacity music festival. When estimating, use
-              <em> peak concurrent attendance</em> — not total ticket sales across a multi-day
-              event — and include staff, contractors and performers.
+              Three things usually drive the size and shape of cover more than anything else.
+              Worth having a rough answer to each before you brief a provider:
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-5">
-              <li>Under 1,000: typically first-aid level cover</li>
-              <li>1,000–5,000: first aid plus on-site ambulance / treatment capability</li>
-              <li>5,000–20,000: paramedic-led team, treatment centre, dedicated transport</li>
-              <li>20,000+: multi-vehicle, doctor-led provision and major incident planning</li>
-            </ul>
-            <p className="mt-3 text-sm">
-              These bands are indicative only — the calculator combines them with the other
-              factors below.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-navy">2. Audience profile</h2>
-            <p className="mt-3">
-              Who is coming changes risk dramatically. The Purple Guide adds points for audiences
-              that are likely to generate more or more serious presentations:
-            </p>
-            <ul className="mt-4 list-disc space-y-2 pl-5">
-              <li>Predominantly very young or very elderly attendees</li>
-              <li>Mixed family audiences with high numbers of children</li>
-              <li>Events with a high likelihood of alcohol or drug use</li>
-              <li>Standing-only or front-of-stage crowds with crush potential</li>
-              <li>Audiences travelling long distances or camping on site</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-navy">3. Event nature and hazards</h2>
-            <p className="mt-3">
-              Activity type and environment add the final layer. Higher-risk examples include
-              motorsport, equestrian, contact sports, pyrotechnics, water-based activities,
-              extreme weather exposure, remote rural locations with long NHS response times, and
-              events running into the night. Each adds points and may also dictate specialist
-              cover — for example, a doctor on scene for motorsport, or water rescue capability
-              for an open-water swim.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-navy">From score to resource plan</h2>
-            <p className="mt-3">
-              Once you have a total score, The Purple Guide translates it into recommended
-              resources: numbers of first aiders, ambulance technicians, paramedics and doctors,
-              plus treatment-centre size and the number and type of ambulances. A typical
-              mid-sized regional event might need a paramedic-led crew of 6–10, a dedicated
-              treatment area, and at least one Emergency Ambulance capable of transporting to
-              hospital.
-            </p>
-            <p className="mt-3">
-              Whoever you appoint should be able to show you their working — the score, the
-              assumptions, and how each resource maps to a foreseeable scenario.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-navy">Other things organisers often miss</h2>
-            <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>
-                <strong>Liaison with statutory services.</strong> Engage your local SAG and the
-                NHS ambulance trust early — they may have specific requirements for handover,
-                radio comms or shared command.
+                <strong>Crowd.</strong> Peak concurrent attendance — not total ticket sales —
+                and who is in it (families, older audiences, alcohol, camping).
               </li>
               <li>
-                <strong>Welfare provision.</strong> Mental health, safeguarding and welfare
-                support sit alongside clinical cover, not inside it.
+                <strong>Activity.</strong> What is happening on site? Music, sport, motorsport,
+                water, pyrotechnics, heritage re-enactment — each carries its own pattern of
+                injuries.
               </li>
               <li>
-                <strong>Provider governance.</strong> Ask for indemnity insurance, clinical
-                governance arrangements, HCPC / NMC registrations and DBS checks.
-              </li>
-              <li>
-                <strong>Documentation.</strong> Keep your risk assessment, medical plan, score
-                sheet and provider credentials together — licensing authorities will ask.
+                <strong>Environment.</strong> Indoor or outdoor, terrain, weather exposure,
+                how far you are from the nearest A&E, how long an NHS crew would realistically
+                take to reach you.
               </li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-navy">Quick planning checklist</h2>
+            <h2 className="text-xl font-semibold text-navy">Things that catch people out</h2>
             <ul className="mt-4 list-disc space-y-2 pl-5">
-              <li>Confirm peak concurrent attendance (not ticket total)</li>
-              <li>Profile your audience — age, alcohol, camping, crowd dynamics</li>
-              <li>List activities and environmental hazards</li>
-              <li>Score the event using The Purple Guide calculator</li>
-              <li>Cross-check the score against a written risk assessment</li>
-              <li>Brief providers with the score, plan and any SAG feedback</li>
-              <li>Document everything for licensing</li>
+              <li>Ticket totals being used in place of peak concurrent attendance</li>
+              <li>Welfare and mental health being lumped in with clinical cover</li>
+              <li>Late engagement with the local SAG and NHS ambulance trust</li>
+              <li>Providers who cannot show their working, insurance or governance</li>
+              <li>Multi-day events scoped as if they were a single day</li>
             </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-navy">What "good" looks like in a brief</h2>
+            <p className="mt-3">
+              A useful conversation with a medical provider usually starts with a one-pager:
+              dates, venue, peak crowd, audience profile, activities, alcohol policy, on-site
+              hours, and anything unusual. From that, a decent provider can sketch a plan and
+              explain the trade-offs in plain English — before any quote.
+            </p>
           </section>
 
           <section className="rounded-2xl border border-navy/10 bg-navy/5 p-6">
-            <h2 className="text-xl font-semibold text-navy">Need a second opinion?</h2>
+            <h2 className="text-xl font-semibold text-navy">
+              Want us to walk you through it?
+            </h2>
             <p className="mt-3">
-              EMT Services is an independent UK event safety company providing private event
-              medical, security and fire safety cover. We're happy to sense-check your Purple
-              Guide score and medical plan before you go to licensing — at no cost.
+              We would rather have a 15-minute conversation than write you a 30-page document.
+              Tell us roughly what you are planning and we will talk you through what cover
+              tends to look like for that kind of event, what your SAG will likely expect, and
+              where the genuine risks sit.
             </p>
             <p className="mt-4">
               <Link
@@ -212,8 +144,8 @@ function GuidePage() {
               </Link>
             </p>
             <p className="mt-3 text-sm">
-              Not affiliated with the NHS or any ambulance trust. We provide private event
-              support alongside — not in place of — statutory emergency services.
+              Independent UK event safety company. Not affiliated with the NHS or any
+              ambulance trust — we provide private event support alongside statutory services.
             </p>
           </section>
         </div>
