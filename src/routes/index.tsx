@@ -32,7 +32,7 @@ import {
 } from "@/components/ui/accordion";
 
 import heroBg from "@/assets/hero-bg.jpg";
-import castleAsset from "@/assets/herstmonceux-castle.jpg.asset.json";
+import castleAsset from "@/assets/medieval-heritage-festival.jpg.asset.json";
 import festivalAsset from "@/assets/open-air-festival.avif.asset.json";
 import indoorAsset from "@/assets/indoor-music.jpg.asset.json";
 import camperAsset from "@/assets/camper-marmalade.jpg.asset.json";
@@ -280,7 +280,7 @@ const gallery = [
   { src: imgCultural, alt: "Open-air festival crowd at sunset", label: "Open-Air Festival" },
   { src: imgPride, alt: "Performers at Eastbourne Pride in vibrant costumes", label: "Eastbourne Pride", href: "https://www.eastbourne-pride.com/" },
   { src: imgIndoor, alt: "Indoor live music event with stage lighting", label: "Indoor Music Event" },
-  { src: imgCastle, alt: "Herstmonceux Castle, East Sussex", label: "Herstmonceux Castle", href: "https://herstmonceux-castle.com/" },
+  { src: imgCastle, alt: "Medieval Heritage Festival re-enactment", label: "Medieval Heritage Festival", href: "https://herstmonceux-castle.com/" },
 ];
 
 const reviews = [
