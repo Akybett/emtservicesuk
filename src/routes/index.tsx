@@ -11,7 +11,7 @@ import {
   Instagram,
   Linkedin,
   Star,
-  ChevronDown,
+  
   Menu,
   X,
   Award,
@@ -56,9 +56,9 @@ const imgStewards = stewardAsset.url;
 const imgFire = firemarshalAsset.url;
 
 
-const TITLE = "EMT Services | Event Medical & Security Cover UK";
+const TITLE = "EMT Services | Professional Medical & Security Event Support";
 const DESCRIPTION =
-  "Event medical cover, SIA-licensed security, professional stewarding and fire safety across the UK. Owner-operated with 35 years' experience.";
+  "EMT Services provides professional medical cover, SIA-licensed security, stewarding and fire safety for events across the UK — owner-operated with 35 years of hands-on experience.";
 const SITE_URL = "https://emtservices.uk/";
 
 export const Route = createFileRoute("/")({
@@ -1107,5 +1107,3 @@ function Field({
   );
 }
 
-// suppress unused warning if ChevronDown not used elsewhere
-void ChevronDown;
