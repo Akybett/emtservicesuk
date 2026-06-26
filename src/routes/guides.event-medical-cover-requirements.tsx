@@ -129,10 +129,10 @@ function GuidePage() {
               Want us to walk you through it?
             </h2>
             <p className="mt-3">
-              We would rather have a 15-minute conversation than write you a 30-page document.
-              Tell us roughly what you are planning and we will talk you through what cover
-              tends to look like for that kind of event, what your SAG will likely expect, and
-              where the genuine risks sit.
+              We are a working provider, not a free consultancy — but a short, friendly chat is
+              usually possible. Tell us roughly what you are planning and, where we can, we will
+              point you in the right direction on what cover tends to look like for that kind of
+              event and what your SAG is likely to expect.
             </p>
             <p className="mt-4">
               <Link
