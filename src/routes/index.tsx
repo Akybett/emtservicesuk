@@ -480,7 +480,7 @@ function Index() {
             ground-level experience — honest about what we do, transparent about how we
             work, and personally invested in every event we cover.
           </p>
-          <p className="mx-auto mt-4 max-w-2xl text-balance text-xs uppercase tracking-[0.2em] text-white/55">
+          <p className="mx-auto mt-4 max-w-2xl text-balance text-xs uppercase tracking-[0.2em] text-white/80">
             Independent private event medical & security support — not an NHS ambulance service.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -500,7 +500,7 @@ function Index() {
               <a href="#services">Our Services</a>
             </Button>
           </div>
-          <ul className="mx-auto mt-14 flex max-w-3xl flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs uppercase tracking-wider text-white/70 sm:text-sm">
+          <ul className="mx-auto mt-14 flex max-w-3xl flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs uppercase tracking-wider text-white/85 sm:text-sm">
             {[
               "35 Years' Experience",
               "Owner-Operated",
@@ -514,7 +514,7 @@ function Index() {
               </li>
             ))}
           </ul>
-          <p className="mx-auto mt-6 text-center text-xs uppercase tracking-[0.18em] text-white/55">
+          <p className="mx-auto mt-6 text-center text-xs uppercase tracking-[0.18em] text-white/80">
             Based in the South East · Covering the UK on request
           </p>
         </div>
@@ -991,6 +991,9 @@ function Index() {
                 we will give you an honest assessment of what your event requires and
                 whether we are the right fit.
               </p>
+              <p className="mt-3 text-sm font-medium text-navy">
+                We aim to reply within one working day.
+              </p>
               <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
                   Email
@@ -1054,7 +1057,8 @@ function Index() {
           <div className="grid gap-10 lg:grid-cols-3">
             <div>
               <Logo light />
-              <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
+              <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/85">
+
                 Independent private event medical, security and safety services across
                 the UK. Owner-operated, 35 years of experience.{" "}
                 <span className="text-white/55">Not affiliated with the NHS or any ambulance trust.</span>
