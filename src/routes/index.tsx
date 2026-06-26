@@ -563,10 +563,11 @@ function Index() {
 
           <div className="mx-auto mt-16 max-w-4xl rounded-2xl border border-border bg-card p-6 text-sm leading-relaxed text-muted-foreground shadow-sm sm:p-8">
             <span className="font-semibold text-navy">Staffing capacity:</span>{" "}
-            We can supply anywhere from a core team of two up to approximately thirty
+            We can supply anywhere from a core team of two up to approximately forty
             personnel for an event. This is always subject to our other commitments and
-            the availability of our vetted team at the time — something we will always
-            be upfront about when you enquire.
+            the availability of our vetted team at the time — and we would rather turn
+            down work than stretch ourselves thin. We will always be upfront about what
+            we can realistically deliver when you enquire.
           </div>
 
           {/* Event types */}
