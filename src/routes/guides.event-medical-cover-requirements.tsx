@@ -134,6 +134,13 @@ function GuidePage() {
               point you in the right direction on what cover tends to look like for that kind of
               event and what your SAG is likely to expect.
             </p>
+            <p className="mt-3">
+              If you have engaged us for an event, you naturally get more of our time as a
+              value add — joining SAG meetings where useful, sharing templates and additional
+              resources, and being on the end of the phone in the run-up. It is not a
+              full-time advisory service, just something we extend to clients we are already
+              working with.
+            </p>
             <p className="mt-4">
               <Link
                 to="/"
