@@ -313,7 +313,7 @@ const faqs = [
   },
   {
     q: "How are you different from St John Ambulance or other voluntary providers?",
-    a: "We are a professional, commercially-contracted event safety provider — not a voluntary or charity organisation. Volunteer groups like St John Ambulance and British Red Cross do excellent work and we have huge respect for the charity sector; this is not about taking anything away from them. We are simply a different model. Our medics, security and safety personnel are paid professionals with formal qualifications (including director-level NEBOSH, Level 4 Safeguarding, SIA licensing for security staff, and recognised pre-hospital care training for our medics). We operate within clearly defined clinical and operational scopes, carry full commercial insurance, and are accountable to the event organiser under a commercial contract. Organisers typically engage us where they need a contracted, professionally-trained team with defined response standards rather than a goodwill-based deployment.",
+    a: "We are a different model, not a better one. Voluntary providers like St John Ambulance and British Red Cross do excellent work and the charity sector is a huge part of UK event safety. The main difference is simply that our staff are paid and do this as their job — they turn up under a commercial contract with defined hours, defined scope, and clear accountability to the organiser. Some events suit a voluntary deployment; others need a contracted professional team. We just happen to be the second kind.",
   },
   {
     q: "What level of medical cover do you provide?",
