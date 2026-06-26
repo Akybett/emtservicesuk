@@ -77,6 +77,43 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: heroBg },
     ],
     links: [{ rel: "canonical", href: SITE_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "EMT Services",
+          alternateName: "Event Management Team Services",
+          description: DESCRIPTION,
+          url: SITE_URL,
+          email: "info@emtservices.uk",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "South East England" },
+            { "@type": "Country", name: "United Kingdom" },
+          ],
+          address: { "@type": "PostalAddress", addressCountry: "GB", addressRegion: "South East England" },
+          sameAs: [
+            "https://www.facebook.com/EventManagementTeamServices",
+            "https://www.instagram.com/emtservices.uk/",
+            "https://www.linkedin.com/company/emt-servicesuk/",
+          ],
+          slogan: "Independent private event medical, security and safety support across the UK.",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
+    ],
   }),
   component: Index,
 });
@@ -426,6 +463,9 @@ function Index() {
               </li>
             ))}
           </ul>
+          <p className="mx-auto mt-6 text-center text-xs uppercase tracking-[0.18em] text-white/55">
+            Based in the South East · Covering the UK on request
+          </p>
         </div>
       </section>
 
@@ -831,6 +871,17 @@ function Index() {
               </div>
               <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+                  Areas We Cover
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-foreground">
+                  Based in the <span className="font-semibold text-navy">South East of England</span> — our home patch for festivals, castle and estate events, and cultural gatherings.
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  We cover events across the wider UK on request. Get in touch and we will let you know honestly whether we are the right fit for your location and dates.
+                </p>
+              </div>
+              <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
                   Follow us on socials
                 </p>
                 <div className="mt-3 flex items-center gap-2">
@@ -923,9 +974,12 @@ function Index() {
           </div>
           <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/55 sm:flex-row sm:items-center">
             <p>© {new Date().getFullYear()} EMT Services. All rights reserved.</p>
-            <Link to="/privacy" className="hover:text-white">
-              Privacy Policy
-            </Link>
+            <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              <li><Link to="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-white">Terms of Service</Link></li>
+              <li><Link to="/cookies" className="hover:text-white">Cookies</Link></li>
+              <li><Link to="/accessibility" className="hover:text-white">Accessibility</Link></li>
+            </ul>
           </div>
         </div>
       </footer>
