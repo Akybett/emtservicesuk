@@ -87,6 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "EMT Services | Event Medical & Security Cover UK" },
       { name: "twitter:description", content: "EMT Services — UK event medical cover, SIA-licensed security, professional stewarding and fire safety. Owner-operated with 35 years' experience." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/JBCA7onDoHRpqC4iabZW9K1n4qF3/social-images/social-1782470360951-download_(1).webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/JBCA7onDoHRpqC4iabZW9K1n4qF3/social-images/social-1782470360951-download_(1).webp" },
     ],
     links: [
       {
