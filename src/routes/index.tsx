@@ -714,6 +714,16 @@ function Index() {
             subtitle="An honest cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
             align="left"
           />
+          <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
+            Planning something similar? Our{" "}
+            <Link
+              to="/guides/event-medical-cover-requirements"
+              className="font-medium text-navy underline underline-offset-2 hover:text-navy/80"
+            >
+              guide to event medical cover requirements
+            </Link>{" "}
+            walks through how we scope cover for events like these.
+          </p>
           <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {gallery.map((g) => {
               const inner = (
@@ -934,6 +944,15 @@ function Index() {
               </AccordionItem>
             ))}
           </Accordion>
+          <p className="mt-8 text-sm text-muted-foreground">
+            Looking for more detail on planning?{" "}
+            <Link
+              to="/guides/event-medical-cover-requirements"
+              className="font-medium text-navy underline underline-offset-2 hover:text-navy/80"
+            >
+              Read our guide to event medical cover requirements →
+            </Link>
+          </p>
         </div>
       </section>
 
