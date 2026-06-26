@@ -715,24 +715,37 @@ function Index() {
             align="left"
           />
           <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {gallery.map((g) => (
-              <figure
-                key={g.label}
-                className="group relative overflow-hidden rounded-xl bg-muted"
-              >
-                <img
-                  src={g.src}
-                  alt={g.alt}
-                  loading="lazy"
-                  width={1280}
-                  height={768}
-                  className="aspect-[16/10] h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                />
-                <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/80 to-transparent px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white">
-                  {g.label}
-                </figcaption>
-              </figure>
-            ))}
+            {gallery.map((g) => {
+              const inner = (
+                <>
+                  <img
+                    src={g.src}
+                    alt={g.alt}
+                    loading="lazy"
+                    width={1280}
+                    height={768}
+                    className="aspect-[16/10] h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  />
+                  <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/80 to-transparent px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white">
+                    {g.label}
+                  </figcaption>
+                </>
+              );
+              return (
+                <figure
+                  key={g.label}
+                  className="group relative overflow-hidden rounded-xl bg-muted"
+                >
+                  {g.href ? (
+                    <a href={g.href} target="_blank" rel="noopener noreferrer" aria-label={`${g.label} (opens in new tab)`} className="block">
+                      {inner}
+                    </a>
+                  ) : (
+                    inner
+                  )}
+                </figure>
+              );
+            })}
           </div>
 
           {/* Reviews */}
