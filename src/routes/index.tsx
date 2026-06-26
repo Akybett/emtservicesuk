@@ -341,6 +341,32 @@ function Logo({ light = false, className = "" }: { light?: boolean; className?: 
 
 function Index() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { data: googleData } = useQuery({
+    queryKey: ["google-reviews"],
+    queryFn: () => getGoogleReviews(),
+    staleTime: 1000 * 60 * 60, // 1 hour
+  });
+  const liveReviews = googleData?.reviews ?? [];
+  const displayReviews =
+    liveReviews.length > 0
+      ? liveReviews.map((r) => ({
+          name: r.author_name,
+          text: r.text,
+          rating: r.rating,
+          when: r.relative_time_description,
+          photo: r.profile_photo_url,
+        }))
+      : reviews.map((r) => ({
+          name: r.name,
+          text: r.text,
+          rating: 5,
+          when: undefined as string | undefined,
+          photo: undefined as string | undefined,
+        }));
+  const avgRating = googleData?.rating ?? 5.0;
+  const totalReviews = googleData?.total ?? reviews.length;
+
+
 
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
