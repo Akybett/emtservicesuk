@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emtservices.uk/sitemap.xml
