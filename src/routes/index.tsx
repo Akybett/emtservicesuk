@@ -36,12 +36,14 @@ import castleAsset from "@/assets/herstmonceux-castle.jpg.asset.json";
 import festivalAsset from "@/assets/open-air-festival.avif.asset.json";
 import indoorAsset from "@/assets/indoor-music.jpg.asset.json";
 import camperAsset from "@/assets/camper-marmalade.jpg.asset.json";
-import wellbeingAsset from "@/assets/wellbeing-festival.jpg.asset.json";
+import prideAsset from "@/assets/eastbourne-pride.jpg.asset.json";
+import carnivalAsset from "@/assets/eastbourne-carnival.jpg.asset.json";
 const imgCastle = castleAsset.url;
 const imgCultural = festivalAsset.url;
 const imgIndoor = indoorAsset.url;
 const imgCamper = camperAsset.url;
-const imgWellbeing = wellbeingAsset.url;
+const imgPride = prideAsset.url;
+const imgCarnival = carnivalAsset.url;
 import logoFull from "@/assets/logo-full.png";
 import logoIcon from "@/assets/logo-icon.png";
 import securityAsset from "@/assets/security.jpg.asset.json";
@@ -273,11 +275,12 @@ const GOOGLE_REVIEW_URL =
   "https://g.page/r/CWbm1yja006BEBM/review";
 
 const gallery = [
-  { src: imgCamper, alt: "Outdoor festival stage at Camper Marmalade", label: "Camper Marmalade" },
+  { src: imgCamper, alt: "Outdoor festival stage at Camper Marmalade", label: "Camper Marmalade", href: "https://campermarmalade.onlineticketseller.com/" },
+  { src: imgCarnival, alt: "Eastbourne Carnival parade with colourful feathered costumes", label: "Eastbourne Carnival", href: "https://www.eastbournecarnival.com/" },
   { src: imgCultural, alt: "Open-air festival crowd at sunset", label: "Open-Air Festival" },
-  { src: imgWellbeing, alt: "Wellbeing festival gathering in summer sun", label: "Wellbeing Festival" },
+  { src: imgPride, alt: "Performers at Eastbourne Pride in vibrant costumes", label: "Eastbourne Pride", href: "https://www.eastbourne-pride.com/" },
   { src: imgIndoor, alt: "Indoor live music event with stage lighting", label: "Indoor Music Event" },
-  { src: imgCastle, alt: "Herstmonceux Castle, East Sussex", label: "Herstmonceux Castle" },
+  { src: imgCastle, alt: "Herstmonceux Castle, East Sussex", label: "Herstmonceux Castle", href: "https://herstmonceux-castle.com/" },
 ];
 
 const reviews = [
@@ -712,24 +715,37 @@ function Index() {
             align="left"
           />
           <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {gallery.map((g) => (
-              <figure
-                key={g.label}
-                className="group relative overflow-hidden rounded-xl bg-muted"
-              >
-                <img
-                  src={g.src}
-                  alt={g.alt}
-                  loading="lazy"
-                  width={1280}
-                  height={768}
-                  className="aspect-[16/10] h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                />
-                <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/80 to-transparent px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white">
-                  {g.label}
-                </figcaption>
-              </figure>
-            ))}
+            {gallery.map((g) => {
+              const inner = (
+                <>
+                  <img
+                    src={g.src}
+                    alt={g.alt}
+                    loading="lazy"
+                    width={1280}
+                    height={768}
+                    className="aspect-[16/10] h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  />
+                  <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/80 to-transparent px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white">
+                    {g.label}
+                  </figcaption>
+                </>
+              );
+              return (
+                <figure
+                  key={g.label}
+                  className="group relative overflow-hidden rounded-xl bg-muted"
+                >
+                  {g.href ? (
+                    <a href={g.href} target="_blank" rel="noopener noreferrer" aria-label={`${g.label} (opens in new tab)`} className="block">
+                      {inner}
+                    </a>
+                  ) : (
+                    inner
+                  )}
+                </figure>
+              );
+            })}
           </div>
 
           {/* Reviews */}
