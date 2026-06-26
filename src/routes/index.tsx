@@ -262,8 +262,16 @@ const reviews = [
 
 const faqs = [
   {
+    q: "Are you part of the NHS or an ambulance service?",
+    a: "No. EMT Services is an independent, privately-owned event safety company. We are not affiliated with the NHS, NHS Ambulance Trusts (such as SECAmb or EMAS), or any statutory emergency service. We are contracted directly by event organisers to provide on-site medical, security, stewarding and fire safety cover.",
+  },
+  {
+    q: "How does your independent private event support actually work?",
+    a: "Event organisers engage us directly. We assess the event's risk profile, agree the right level of cover, and deploy a vetted team — medics, SIA-licensed security, stewards, and fire safety personnel — for the duration of the event. In a genuine emergency our on-site team stabilises and, where clinically necessary, hands over to the statutory NHS ambulance service in the normal way. We complement public emergency services on-site; we do not replace them.",
+  },
+  {
     q: "What level of medical cover do you provide?",
-    a: "We supply fully trained response medics tailored to the specific risk assessment of your event. We are always completely transparent about our clinical capacity and will ensure you have the exact level of competent cover required, without overstating our scope of practice.",
+    a: "We supply trained event medics and first-aid cover scaled to your event's risk assessment. We are not CQC-registered and do not provide patient conveyance. When clinical or ambulance provision is required, we partner with trusted CQC-registered providers so the right level of care is in place. We are always transparent about our scope and will never overstate our clinical capacity.",
   },
   {
     q: "Are your security staff fully licensed?",
