@@ -384,6 +384,9 @@ function Index() {
             ground-level experience — honest about what we do, transparent about how we
             work, and personally invested in every event we cover.
           </p>
+          <p className="mx-auto mt-4 max-w-2xl text-balance text-xs uppercase tracking-[0.2em] text-white/55">
+            Independent private event medical & security support — not an NHS ambulance service.
+          </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Button
               asChild
@@ -856,8 +859,9 @@ function Index() {
             <div>
               <Logo light />
               <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
-                Professional event safety, medical cover, and security services across
-                the UK. Owner-operated. 35 years of experience.
+                Independent private event medical, security and safety services across
+                the UK. Owner-operated, 35 years of experience.{" "}
+                <span className="text-white/55">Not affiliated with the NHS or any ambulance trust.</span>
               </p>
               <a
                 href="mailto:info@emtservices.uk"
