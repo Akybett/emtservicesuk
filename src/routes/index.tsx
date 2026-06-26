@@ -1072,6 +1072,7 @@ function Index() {
           <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/55 sm:flex-row sm:items-center">
             <p>© {new Date().getFullYear()} EMT Services. All rights reserved.</p>
             <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              <li><Link to="/guides/event-medical-cover-requirements" className="hover:text-white">Event Medical Cover Guide</Link></li>
               <li><Link to="/privacy" className="hover:text-white">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-white">Terms of Service</Link></li>
               <li><Link to="/cookies" className="hover:text-white">Cookies</Link></li>
