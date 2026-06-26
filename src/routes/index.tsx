@@ -341,7 +341,7 @@ const faqs = [
   },
   {
     q: "How are bookings confirmed, and what about bad weather or cancellation?",
-    a: "A deposit secures the booking and the deployment date. Once staff have been allocated and rostered, that resource is committed to your event — so cancellations, including weather-related ones, are generally non-refundable because we still have to pay the team. We will always try to be fair and work with you where we can, but please plan on the basis that the deposit holds the date and the staff.",
+    a: "A deposit secures the booking and the deployment date, and is non-refundable once staff have been allocated and rostered to your event — including in the case of cancellation or bad weather, because we still have to pay the team. The full balance is usually due prior to the event; for larger teams we need the funds in advance to cover staffing costs. Payment terms are negotiable depending on the client and the nature of the job — talk to us and we will work something sensible out.",
   },
   {
     q: "Do you cover small or bespoke private events?",
