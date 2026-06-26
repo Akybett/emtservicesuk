@@ -1,7 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { getGoogleReviews } from "@/lib/google-reviews.functions";
+import googleReviewsData from "@/data/google-reviews.json";
+
+type GoogleReview = {
+  author_name: string;
+  rating: number;
+  text: string;
+  relative_time_description: string;
+  profile_photo_url?: string;
+};
 import {
   Shield,
   HeartPulse,
@@ -364,12 +371,12 @@ function Logo({ light = false, className = "" }: { light?: boolean; className?: 
 
 function Index() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { data: googleData } = useQuery({
-    queryKey: ["google-reviews"],
-    queryFn: () => getGoogleReviews(),
-    staleTime: 1000 * 60 * 60, // 1 hour
-  });
-  const liveReviews = googleData?.reviews ?? [];
+  const googleData = googleReviewsData as {
+    rating: number | null;
+    total: number | null;
+    reviews: GoogleReview[];
+  };
+  const liveReviews: GoogleReview[] = googleData.reviews ?? [];
   const displayReviews =
     liveReviews.length > 0
       ? liveReviews.map((r) => ({
