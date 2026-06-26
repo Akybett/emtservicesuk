@@ -331,6 +331,22 @@ const faqs = [
     q: "Can you assist with event planning and risk assessments?",
     a: "Absolutely. With decades of hands-on experience, we offer comprehensive consultancy services. We can assist with drafting safety management plans, medical risk assessments, and liaising with local authorities or Safety Advisory Groups (SAG) on your behalf.",
   },
+  {
+    q: "Are you fully insured?",
+    a: "Yes. We carry full public and employer's liability insurance, and our medical provision is also covered by medical malpractice insurance. Certificates can be provided to organisers, venues and Safety Advisory Groups on request.",
+  },
+  {
+    q: "How far in advance should we book you?",
+    a: "As much lead time as possible, please. Larger events with SAG involvement are best discussed months ahead so cover can be designed properly and built into your licensing submission. Shorter-notice bookings are sometimes possible depending on staff availability — get in touch and we will be honest about what we can offer.",
+  },
+  {
+    q: "How are bookings confirmed, and what about bad weather or cancellation?",
+    a: "A deposit secures the booking and the deployment date. Once staff have been allocated and rostered, that resource is committed to your event — so cancellations, including weather-related ones, are generally non-refundable because we still have to pay the team. We will always try to be fair and work with you where we can, but please plan on the basis that the deposit holds the date and the staff.",
+  },
+  {
+    q: "Do you cover small or bespoke private events?",
+    a: "Yes. Alongside large festivals and public events we are happy to support small and bespoke jobs — for example a single suited-and-booted security officer at a wedding, a medic for a private party, or discreet cover for a corporate dinner or film set. Tell us what you have in mind and we will put something sensible together.",
+  },
 ];
 
 function Logo({ light = false, className = "" }: { light?: boolean; className?: string }) {
