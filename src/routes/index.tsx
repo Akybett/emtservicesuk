@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { getGoogleReviews } from "@/lib/google-reviews.functions";
 import {
   Shield,
   HeartPulse,
@@ -339,6 +341,32 @@ function Logo({ light = false, className = "" }: { light?: boolean; className?: 
 
 function Index() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { data: googleData } = useQuery({
+    queryKey: ["google-reviews"],
+    queryFn: () => getGoogleReviews(),
+    staleTime: 1000 * 60 * 60, // 1 hour
+  });
+  const liveReviews = googleData?.reviews ?? [];
+  const displayReviews =
+    liveReviews.length > 0
+      ? liveReviews.map((r) => ({
+          name: r.author_name,
+          text: r.text,
+          rating: r.rating,
+          when: r.relative_time_description,
+          photo: r.profile_photo_url,
+        }))
+      : reviews.map((r) => ({
+          name: r.name,
+          text: r.text,
+          rating: 5,
+          when: undefined as string | undefined,
+          photo: undefined as string | undefined,
+        }));
+  const avgRating = googleData?.rating ?? 5.0;
+  const totalReviews = googleData?.total ?? reviews.length;
+
+
 
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
@@ -711,37 +739,79 @@ function Index() {
                 <h3 className="text-2xl font-semibold tracking-tight text-navy">
                   Google Reviews
                 </h3>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <a
+                  href={GOOGLE_REVIEW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition hover:text-navy"
+                >
                   <div className="flex">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
                         key={i}
                         size={16}
-                        className="fill-amber-400 text-amber-400"
+                        className={
+                          i < Math.round(avgRating)
+                            ? "fill-amber-400 text-amber-400"
+                            : "fill-muted text-muted-foreground/40"
+                        }
                       />
                     ))}
                   </div>
-                  <span className="font-medium text-foreground">5.0</span>
-                  <span>· {reviews.length} reviews</span>
-                </div>
+                  <span className="font-medium text-foreground">
+                    {avgRating.toFixed(1)}
+                  </span>
+                  <span>· {totalReviews} reviews</span>
+                </a>
               </div>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                {reviews.map((r) => (
+                {displayReviews.map((r, idx) => (
                   <blockquote
-                    key={r.name}
+                    key={`${r.name}-${idx}`}
                     className="rounded-2xl border border-border bg-card p-6 shadow-sm"
                   >
-                    <div className="flex">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <Star
-                          key={i}
-                          size={14}
-                          className="fill-amber-400 text-amber-400"
+                    <div className="flex items-center gap-3">
+                      {r.photo ? (
+                        <img
+                          src={r.photo}
+                          alt=""
+                          loading="lazy"
+                          width={32}
+                          height={32}
+                          className="h-8 w-8 rounded-full object-cover"
+                          referrerPolicy="no-referrer"
                         />
-                      ))}
+                      ) : (
+                        <span
+                          aria-hidden="true"
+                          className="flex h-8 w-8 items-center justify-center rounded-full bg-navy/10 text-xs font-semibold text-navy"
+                        >
+                          {r.name.charAt(0)}
+                        </span>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <div className="flex">
+                          {Array.from({ length: 5 }).map((_, i) => (
+                            <Star
+                              key={i}
+                              size={12}
+                              className={
+                                i < r.rating
+                                  ? "fill-amber-400 text-amber-400"
+                                  : "fill-muted text-muted-foreground/40"
+                              }
+                            />
+                          ))}
+                        </div>
+                        {r.when ? (
+                          <span className="text-[11px] text-muted-foreground">
+                            {r.when}
+                          </span>
+                        ) : null}
+                      </div>
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-foreground/85">
-                      “{r.text}”
+                      &ldquo;{r.text}&rdquo;
                     </p>
                     <footer className="mt-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                       — {r.name}
@@ -749,7 +819,18 @@ function Index() {
                   </blockquote>
                 ))}
               </div>
+              <div className="mt-6">
+                <a
+                  href={GOOGLE_REVIEW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                >
+                  See all reviews on Google →
+                </a>
+              </div>
             </div>
+
 
             <aside className="rounded-2xl border border-border bg-card p-7 shadow-sm">
               <h3 className="text-2xl font-semibold tracking-tight text-navy">
