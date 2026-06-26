@@ -275,11 +275,12 @@ const GOOGLE_REVIEW_URL =
   "https://g.page/r/CWbm1yja006BEBM/review";
 
 const gallery = [
-  { src: imgCamper, alt: "Outdoor festival stage at Camper Marmalade", label: "Camper Marmalade" },
+  { src: imgCamper, alt: "Outdoor festival stage at Camper Marmalade", label: "Camper Marmalade", href: "https://campermarmalade.onlineticketseller.com/" },
+  { src: imgCarnival, alt: "Eastbourne Carnival parade with colourful feathered costumes", label: "Eastbourne Carnival", href: "https://www.eastbournecarnival.com/" },
   { src: imgCultural, alt: "Open-air festival crowd at sunset", label: "Open-Air Festival" },
-  { src: imgWellbeing, alt: "Wellbeing festival gathering in summer sun", label: "Wellbeing Festival" },
+  { src: imgPride, alt: "Performers at Eastbourne Pride in vibrant costumes", label: "Eastbourne Pride", href: "https://www.eastbourne-pride.com/" },
   { src: imgIndoor, alt: "Indoor live music event with stage lighting", label: "Indoor Music Event" },
-  { src: imgCastle, alt: "Herstmonceux Castle, East Sussex", label: "Herstmonceux Castle" },
+  { src: imgCastle, alt: "Herstmonceux Castle, East Sussex", label: "Herstmonceux Castle", href: "https://herstmonceux-castle.com/" },
 ];
 
 const reviews = [
