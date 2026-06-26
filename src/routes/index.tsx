@@ -341,7 +341,7 @@ const faqs = [
   },
   {
     q: "How are bookings confirmed, and what about bad weather or cancellation?",
-    a: "A deposit secures the booking and the deployment date. Once staff have been allocated and rostered, that resource is committed to your event — so cancellations, including weather-related ones, are generally non-refundable because we still have to pay the team. We will always try to be fair and work with you where we can, but please plan on the basis that the deposit holds the date and the staff.",
+    a: "A deposit secures the booking and the deployment date, and is non-refundable once staff have been allocated and rostered to your event — including in the case of cancellation or bad weather, because we still have to pay the team. The full balance is usually due prior to the event; for larger teams we need the funds in advance to cover staffing costs. Payment terms are negotiable depending on the client and the nature of the job — talk to us and we will work something sensible out.",
   },
   {
     q: "Do you cover small or bespoke private events?",
@@ -563,10 +563,11 @@ function Index() {
 
           <div className="mx-auto mt-16 max-w-4xl rounded-2xl border border-border bg-card p-6 text-sm leading-relaxed text-muted-foreground shadow-sm sm:p-8">
             <span className="font-semibold text-navy">Staffing capacity:</span>{" "}
-            We can supply anywhere from a core team of two up to approximately thirty
+            We can supply anywhere from a core team of two up to approximately forty
             personnel for an event. This is always subject to our other commitments and
-            the availability of our vetted team at the time — something we will always
-            be upfront about when you enquire.
+            the availability of our vetted team at the time — and we would rather turn
+            down work than stretch ourselves thin. We will always be upfront about what
+            we can realistically deliver when you enquire.
           </div>
 
           {/* Event types */}
