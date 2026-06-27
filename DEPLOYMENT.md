@@ -1,6 +1,30 @@
-# Deploying to Nginx (Static Build)
+# Deployment
 
-This project is configured to build a fully prerendered static site for Nginx.
+This project is currently configured for Netlify SSR via TanStack Start and Nitro.
+
+## Netlify
+
+The included `netlify.toml` sets the correct build command, publish directory,
+Node version and Nitro preset.
+
+Use these settings if Netlify asks for them manually:
+
+```bash
+Build command: npm run build
+Publish directory: dist
+Functions directory: leave blank
+```
+
+Do not publish `dist/client`, `.vercel/output`, `.output/public`, or the project
+root. Publishing the wrong folder can produce a blank page because Netlify will
+only serve static assets and will not use the generated TanStack Start server
+function.
+
+## Nginx static build note
+
+This project was previously prepared for a fully prerendered static Nginx export,
+but the active configuration now targets Netlify SSR. Re-enable a static preset
+only if you are returning to an Nginx-only deployment with no server runtime.
 
 ## Build it
 
@@ -14,13 +38,12 @@ npm ci
 npm run build
 ```
 
-The `prebuild` step writes `src/data/google-reviews.json` (baked into the
-prerendered HTML). The `build` step runs `vite build` with Nitro's `static`
-preset and prerenders every route.
+The `prebuild` step writes `src/data/google-reviews.json`, so review data is
+baked into the build output rather than fetched by the browser at runtime.
 
 ## Output
 
-After `npm run build` the deployable static site lives in:
+For the old Nginx static setup, the deployable static site lived in:
 
 ```
 .output/public/
