@@ -1,7 +1,42 @@
 {
-  "rating": null,
-  "total": null,
-  "reviews": [],
-  "fetchedAt": "2026-06-26T14:04:32.226Z",
-  "error": "not_configured"
+  "rating": 5,
+  "total": 6,
+  "reviews": [
+    {
+      "author_name": "Miya Lovely",
+      "rating": 5,
+      "text": "Very professional and quick response to any issues that arrived highly recommended",
+      "relative_time_description": "a week ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoVZAngtxEXC4FNAILizRpm2YWlNwVFNpeYfxML-GTz_HIVC9J=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author_name": "Niki Y",
+      "rating": 5,
+      "text": "Excellent service! Contacted about help with an event and the team were so professional, thouroughly discussed our options and did exactly what was needed. Fantastic!",
+      "relative_time_description": "2 weeks ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU6N9XLDl0fG2whq0EkonGIMPMR0PfB_buSctynqoJiFI7HsJm8oA=s128-c0x00000000-cc-rp-mo-ba4"
+    },
+    {
+      "author_name": "The wandering wizard",
+      "rating": 5,
+      "text": "Had the absolute pleasure of working alongside Andy and his team at inter the wild festival.  Absolute legend,  knowledgeable,  professional and a joy to work alongside.\nLook forward to working with Emt anytime\nBob the wizard\n💜🧙🧙‍♂️⚡️",
+      "relative_time_description": "9 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK9Ww4Ar0ijTaGIfsWVkqXJr0OXiSDVH3OLk-xn5MAcI70Plg=s128-c0x00000000-cc-rp-mo-ba4"
+    },
+    {
+      "author_name": "Mel Martin",
+      "rating": 5,
+      "text": "Alan arrived in good time he was a likeable man.Luckily only 2 plasters  were needed during the event. EMT were our first choice for medical cover this year and we will certainly be booking them for future events.",
+      "relative_time_description": "9 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-VKxMFZvybGIITpZjMsJ80PS6DoAenvhdKlNsoahOGIndGUe9Gg=s128-c0x00000000-cc-rp-mo-ba6"
+    },
+    {
+      "author_name": "Claire",
+      "rating": 5,
+      "text": "",
+      "relative_time_description": "9 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMfwk22vEzcnQ8yYFpGbOxd7h9W1osT7caxk7GNv2taGvyADGE=s128-c0x00000000-cc-rp-mo"
+    }
+  ],
+  "fetchedAt": "2026-06-27T14:06:19.773Z"
 }
