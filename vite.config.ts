@@ -5,29 +5,18 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Prerender every page so the build outputs static HTML for Nginx.
-// Inside the Lovable preview/build, the `nitro` preset override is ignored
-// (Lovable forces Cloudflare), so the live preview keeps working unchanged.
-// When YOU run `npm run build` on your own machine, the `static` preset
-// produces a plain folder of HTML/CSS/JS suitable for Nginx.
-const prerenderPages = [
-  { path: "/" },
-  { path: "/guides" },
-  { path: "/guides/event-medical-cover-requirements" },
-  { path: "/privacy" },
-  { path: "/terms" },
-  { path: "/cookies" },
-  { path: "/accessibility" },
-];
-
+// Vercel build target. The Lovable preview/build ignores the `nitro` preset
+// override (it forces Cloudflare internally), so the sandbox preview keeps
+// working unchanged. When Vercel runs `npm run build`, the `vercel` preset
+// produces the proper SSR output Vercel expects.
+//
+// Prerendering is intentionally disabled: on Vercel, TanStack Start runs as
+// SSR functions, so static prerender isn't required, and enabling it caused
+// the Lovable sandbox build (Cloudflare preset) to crash during the
+// prerender step.
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
-    pages: prerenderPages,
-    prerender: {
-      enabled: true,
-      crawlLinks: true,
-    },
   },
   nitro: {
     preset: "vercel",
