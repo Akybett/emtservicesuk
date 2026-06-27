@@ -30,6 +30,6 @@ export default defineConfig({
     },
   },
   nitro: {
-    preset: "static",
+    preset: "vercel",
   },
 });
