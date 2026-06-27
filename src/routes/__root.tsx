@@ -77,20 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "EMT Services | Event Medical & Security Cover UK" },
-      { name: "description", content: "EMT Services — UK event medical cover, SIA-licensed security, professional stewarding and fire safety. Owner-operated with 35 years' experience." },
       { name: "author", content: "EMT Services" },
-      { property: "og:site_name", content: "EMT Services" },
-      { property: "og:title", content: "EMT Services | Event Medical & Security Cover UK" },
-      { property: "og:description", content: "EMT Services — UK event medical cover, SIA-licensed security, professional stewarding and fire safety. Owner-operated with 35 years' experience." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "EMT Services | Event Medical & Security Cover UK" },
-      { name: "twitter:description", content: "EMT Services — UK event medical cover, SIA-licensed security, professional stewarding and fire safety. Owner-operated with 35 years' experience." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/JBCA7onDoHRpqC4iabZW9K1n4qF3/social-images/social-1782470360951-download_(1).webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/JBCA7onDoHRpqC4iabZW9K1n4qF3/social-images/social-1782470360951-download_(1).webp" },
     ],
     links: [
+      {
+        rel: "icon",
+        href: "/favicon.ico",
+        type: "image/x-icon",
+      },
       {
         rel: "stylesheet",
         href: appCss,
