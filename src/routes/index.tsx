@@ -69,7 +69,7 @@ const imgFire = firemarshalAsset.url;
 
 const TITLE = "EMT Services | Professional Medical & Security Event Support";
 const DESCRIPTION =
-  "Independent UK event safety company providing professional medical cover, SIA-licensed security, stewarding and fire safety for festivals, cultural and corporate events. Owner-operated with 35 years of hands-on experience.";
+  "Independent UK event safety company providing professional medical cover, SIA-licensed security, stewarding and fire safety for festivals, cultural and corporate events. Owner-operated, with a combined 35+ years of hands-on experience.";
 const SITE_URL = "https://emtservices.uk/";
 
 export const Route = createFileRoute("/")({
