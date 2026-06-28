@@ -203,7 +203,7 @@ const foundations = [
   },
   {
     title: "Pricing & Fair Pay",
-    copy: "We are not interested in competing on price alone. We pay our staff fairly for the skill and experience they bring, and that is reflected in what we charge. We are unlikely to be the cheapest option — but our pricing will always be fair, transparent, and clearly explained.",
+    copy: "Properly trained, vetted and fairly paid teams cost money, and that is reflected in what we charge. Our pricing will always be fair, transparent and clearly explained — and matched to the cover your event actually needs.",
   },
   {
     title: "Operating to the Highest Standards",
