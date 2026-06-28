@@ -211,6 +211,7 @@ function GuidePage() {
             <h2 className="text-xl font-semibold text-navy">Things that catch people out</h2>
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>Ticket totals being used in place of peak concurrent attendance</li>
+              <li>Dual-role staffing where one person is expected to be both security and steward</li>
               <li>Stewards being asked to do work that legally requires SIA cover</li>
               <li>Welfare and mental health being lumped in with clinical cover</li>
               <li>Late engagement with the SAG, licensing authority and NHS ambulance trust</li>
