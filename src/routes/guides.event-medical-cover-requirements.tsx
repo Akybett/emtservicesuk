@@ -164,24 +164,20 @@ function GuidePage() {
           <section>
             <h2 className="text-xl font-semibold text-navy">A few legal and guidance baselines</h2>
             <p className="mt-3">
-              Organisers often ask “how many first aiders do I need for a bar?” or “what is the
-              minimum medical cover for a festival?” The honest answer is: there is rarely a fixed
-              statutory number. What the licensing authority and Safety Advisory Group expect is
-              that your cover matches your risk assessment, not that you meet a one-size-fits-all
-              ratio. That said, a few common starting points are useful to know:
+              Organisers often ask "what is the minimum cover we need for a festival?" The honest
+              answer is: there is rarely a fixed statutory number. What the licensing authority and
+              Safety Advisory Group expect is that your provision matches your risk assessment — your
+              crowd demographics, the activities you are running, the experience of your audience,
+              the weather, terrain and many other factors. This is a guide to start the conversation,
+              not a science. Exact numbers always come from your specific risk assessment and SAG.
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>
-                <strong>HSE First Aid at Work.</strong> For low-risk workplaces the rough guidance
-                is one first aider per 100 people present; higher-risk or remote settings push that
-                number up. Events are not ordinary workplaces, but the principle — provision
-                matched to risk and headcount — is the same.
-              </li>
-              <li>
-                <strong>Bar and hospitality areas.</strong> Licensing conditions often require a
-                steward or door supervisor ratio for bars and late-night areas, especially where
-                alcohol is served. The exact requirement comes from your licensing officer and SAG,
-                not from a generic table.
+                <strong>Bar and alcohol areas.</strong> A venue or event that sells alcohol usually
+                has licensing conditions that require SIA-licensed door supervision or stewarding in
+                specific ratios. The exact requirement comes from your licensing officer and SAG, but
+                a common starting point in busy bar or late-night areas is around one SIA door
+                supervisor per 100 people. Stewards cannot be substituted for SIA roles here.
               </li>
               <li>
                 <strong>Crowd-to-medic thinking.</strong> Industry guidance (including the Purple
