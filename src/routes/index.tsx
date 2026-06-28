@@ -509,7 +509,7 @@ function Index() {
           </div>
           <ul className="mx-auto mt-14 flex max-w-3xl flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs uppercase tracking-wider text-white/85 sm:text-sm">
             {[
-              "35 Years' Experience",
+              "35+ Years Combined",
               "Owner-Operated",
               "SIA-Licensed",
               "NEBOSH Qualified",
