@@ -748,9 +748,9 @@ function Index() {
               to="/guides/event-medical-cover-requirements"
               className="font-medium text-navy underline underline-offset-2 hover:text-navy/80"
             >
-              guide to event medical cover requirements
+              overview of event medical, security and stewarding cover
             </Link>{" "}
-            walks through how we scope cover for events like these.
+            walks through how we tend to scope events like these.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {gallery.map((g) => {
