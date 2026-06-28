@@ -161,7 +161,7 @@ const services = [
     icon: Flame,
     title: "Fire Safety Operations",
     image: imgFire,
-    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. Andy holds a NEBOSH certification — a gold-standard credential in occupational health, safety, and risk management — ensuring director-level qualification is applied to every event we cover.",
+    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. Andy holds a NEBOSH certification — a recognised qualification in occupational health, safety and risk management — applied to every event we cover.",
   },
 ];
 
