@@ -166,10 +166,12 @@ function GuidePage() {
             <p className="mt-3">
               Organisers often ask "what is the minimum cover we need for a festival?" The honest
               answer is: there is rarely a fixed statutory number. What the licensing authority and
-              Safety Advisory Group expect is that your provision matches your risk assessment — your
-              crowd demographics, the activities you are running, the experience of your audience,
-              the weather, terrain and many other factors. This is a guide to start the conversation,
-              not a science. Exact numbers always come from your specific risk assessment and SAG.
+              Safety Advisory Group (where there is one) expect is that your provision matches your
+              risk assessment and your Event Management Plan (EMP). Not every event has a SAG, so
+              your EMP needs to be thorough — we have seen events with EMPs ranging from a few dozen
+              pages to nearly a hundred, depending on the size and complexity of the event. This is
+              a guide to start the conversation, not a science. Exact numbers always come from your
+              specific risk assessment, EMP and any SAG or licensing officer involved.
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>
@@ -191,11 +193,17 @@ function GuidePage() {
                 security work by law. Asking a steward to act as a door supervisor or to use force
                 can breach licensing conditions and invalidate insurance.
               </li>
+              <li>
+                <strong>No dual roles on the day.</strong> A person booked as security cannot
+                simultaneously wear a steward's hat, and vice versa. Dual roles are frowned upon
+                by insurers because they blur lines of authority and can leave gaps in cover at the
+                moments they matter most. Security staff are security; stewards are stewards.
+              </li>
             </ul>
             <p className="mt-3">
               The best use of these numbers is as a sense-check, not a final specification. If
               your event is anything more than a small, low-risk gathering, it is worth running the
-              numbers past your SAG and a provider who can show their working.
+              numbers past your SAG or licensing officer and a provider who can show their working.
             </p>
           </section>
 
