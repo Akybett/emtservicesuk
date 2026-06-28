@@ -978,7 +978,7 @@ function Index() {
               to="/guides/event-medical-cover-requirements"
               className="font-medium text-navy underline underline-offset-2 hover:text-navy/80"
             >
-              Read our guide to event medical cover requirements →
+              Read our overview of event medical, security and stewarding cover →
             </Link>
           </p>
         </div>
