@@ -402,7 +402,7 @@ function Index() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-navy-deep/85 text-white backdrop-blur">
-        <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 lg:px-8 sm:h-24">
+        <div className="mx-auto flex h-28 w-full max-w-7xl items-center justify-between px-5 lg:px-8 sm:h-32">
           <Logo light />
           <nav className="hidden items-center gap-8 lg:flex">
             {navLinks.map((l) => (
