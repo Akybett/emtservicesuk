@@ -344,7 +344,7 @@ const faqs = [
   },
   {
     q: "How far in advance should we book you?",
-    a: "As much lead time as possible, please. Larger events with SAG involvement are best discussed months ahead so cover can be designed properly and built into your licensing submission. Shorter-notice bookings are sometimes possible depending on staff availability — get in touch and we will be honest about what we can offer.",
+    a: "As much lead time as possible, please. Larger events with SAG involvement are best discussed months ahead so cover can be designed properly and built into your licensing submission. Shorter-notice bookings are sometimes possible depending on staff availability — get in touch and we will tell you straight what we can offer.",
   },
   {
     q: "How are bookings confirmed, and what about bad weather or cancellation?",
