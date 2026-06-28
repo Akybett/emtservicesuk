@@ -190,8 +190,8 @@ const foundations = [
     copy: "Our team is built through personal recommendations and direct approaches — not agency pools. We personally vet every operative, actively follow up references, and consult trusted industry colleagues. Our SIA staff are seasoned professionals with real operational experience.",
   },
   {
-    title: "Qualified at Director Level",
-    copy: "As co-owners, Sid and Andy both hold a wide variety of professional and industry-recognised qualifications. Specifically regarding health, safety, and fire safety, Andy holds a NEBOSH certification, ensuring EMT Services brings director-level qualification to this critical area. Both directors are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT). This is offered as reassurance, not as a boast.",
+    title: "Director-Level Qualifications",
+    copy: "As co-owners, Sid and Andy both hold a range of professional and industry-recognised qualifications. On health, safety and fire safety specifically, Andy holds a NEBOSH certification. Both directors are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
   },
   {
     title: "Directors on the Ground",
