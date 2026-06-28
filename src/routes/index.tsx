@@ -358,11 +358,11 @@ const faqs = [
 
 function Logo({ light = false, className = "" }: { light?: boolean; className?: string }) {
   return (
-    <a href="#top" className={`inline-flex items-center ${className}`} aria-label="EM Services">
+    <a href="#top" className={`inline-flex items-center ${className}`} aria-label="EMT Services">
       <img
         src={logoFull}
-        alt="EM Services"
-        className={`h-14 w-auto sm:h-16 ${light ? "invert brightness-0" : ""}`}
+        alt="EMT Services"
+        className={`h-20 w-auto sm:h-24 ${light ? "invert brightness-0" : ""}`}
         style={light ? { filter: "brightness(0) invert(1)" } : undefined}
       />
     </a>
@@ -402,7 +402,7 @@ function Index() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-navy-deep/85 text-white backdrop-blur">
-        <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 lg:px-8 sm:h-24">
+        <div className="mx-auto flex h-28 w-full max-w-7xl items-center justify-between px-5 lg:px-8 sm:h-32">
           <Logo light />
           <nav className="hidden items-center gap-8 lg:flex">
             {navLinks.map((l) => (
@@ -748,9 +748,9 @@ function Index() {
               to="/guides/event-medical-cover-requirements"
               className="font-medium text-navy underline underline-offset-2 hover:text-navy/80"
             >
-              guide to event medical cover requirements
+              overview of event medical, security and stewarding cover
             </Link>{" "}
-            walks through how we scope cover for events like these.
+            walks through how we tend to scope events like these.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {gallery.map((g) => {
@@ -978,7 +978,7 @@ function Index() {
               to="/guides/event-medical-cover-requirements"
               className="font-medium text-navy underline underline-offset-2 hover:text-navy/80"
             >
-              Read our guide to event medical cover requirements →
+              Read our overview of event medical, security and stewarding cover →
             </Link>
           </p>
         </div>
@@ -1123,7 +1123,7 @@ function Index() {
           <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/55 sm:flex-row sm:items-center">
             <p>© {new Date().getFullYear()} EMT Services. All rights reserved.</p>
             <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
-              <li><Link to="/guides/event-medical-cover-requirements" className="hover:text-white">Event Medical Cover Guide</Link></li>
+              <li><Link to="/guides/event-medical-cover-requirements" className="hover:text-white">Event Safety Cover Overview</Link></li>
               <li><Link to="/privacy" className="hover:text-white">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-white">Terms of Service</Link></li>
               <li><Link to="/cookies" className="hover:text-white">Cookies</Link></li>

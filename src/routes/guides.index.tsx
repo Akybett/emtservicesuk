@@ -9,9 +9,9 @@ const URL = "https://emtservicesuk.lovable.app/guides";
 const guides = [
   {
     to: "/guides/event-medical-cover-requirements",
-    title: "Event Medical Cover Requirements: A UK Organiser's Guide",
+    title: "Event Safety Cover: Medical, Security & Stewarding — A UK Organiser's Overview",
     description:
-      "How to determine the right level of event medical cover using The Purple Guide — attendance, audience profile, hazards and resource planning.",
+      "A heads-up on scoping medical, security and stewarding together — what drives the size of each, what catches people out, and what a useful brief looks like.",
     tag: "Planning",
   },
 ];
