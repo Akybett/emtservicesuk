@@ -478,17 +478,17 @@ function Index() {
           />
 
           <h1 className="mx-auto mt-10 max-w-3xl text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Event Safety.
+            Event Safety,
             <br />
-            35 Years of Hands-On Experience.
+            Built on Decades of Experience.
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-balance text-base leading-relaxed text-white/75 sm:text-lg">
-            A small, owner-operated firm led by two directors with over three decades of
-            ground-level experience — honest about what we do, transparent about how we
-            work, and personally invested in every event we cover.
+            A small, owner-operated firm led by two directors with a combined 35+ years
+            of ground-level experience — clear about what we do, transparent about how
+            we work, and personally invested in every event we cover.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-balance text-xs uppercase tracking-[0.2em] text-white/80">
-            Independent private event medical & security support — not an NHS ambulance service.
+            Independent private event safety provider.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Button
