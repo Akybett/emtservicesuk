@@ -162,6 +162,48 @@ function GuidePage() {
           </section>
 
           <section>
+            <h2 className="text-xl font-semibold text-navy">A few legal and guidance baselines</h2>
+            <p className="mt-3">
+              Organisers often ask “how many first aiders do I need for a bar?” or “what is the
+              minimum medical cover for a festival?” The honest answer is: there is rarely a fixed
+              statutory number. What the licensing authority and Safety Advisory Group expect is
+              that your cover matches your risk assessment, not that you meet a one-size-fits-all
+              ratio. That said, a few common starting points are useful to know:
+            </p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              <li>
+                <strong>HSE First Aid at Work.</strong> For low-risk workplaces the rough guidance
+                is one first aider per 100 people present; higher-risk or remote settings push that
+                number up. Events are not ordinary workplaces, but the principle — provision
+                matched to risk and headcount — is the same.
+              </li>
+              <li>
+                <strong>Bar and hospitality areas.</strong> Licensing conditions often require a
+                steward or door supervisor ratio for bars and late-night areas, especially where
+                alcohol is served. The exact requirement comes from your licensing officer and SAG,
+                not from a generic table.
+              </li>
+              <li>
+                <strong>Crowd-to-medic thinking.</strong> Industry guidance (including the Purple
+                Guide) discusses medical cover in terms of peak crowd density, activity type and
+                ambulance handover time, not a flat headcount ratio. A low-risk seated event may
+                need very different cover to a mosh pit or motorsport arena with the same ticket
+                sales.
+              </li>
+              <li>
+                <strong>Stewards vs SIA roles.</strong> Only SIA-licensed staff can do certain
+                security work by law. Asking a steward to act as a door supervisor or to use force
+                can breach licensing conditions and invalidate insurance.
+              </li>
+            </ul>
+            <p className="mt-3">
+              The best use of these numbers is as a sense-check, not a final specification. If
+              your event is anything more than a small, low-risk gathering, it is worth running the
+              numbers past your SAG and a provider who can show their working.
+            </p>
+          </section>
+
+          <section>
             <h2 className="text-xl font-semibold text-navy">Things that catch people out</h2>
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>Ticket totals being used in place of peak concurrent attendance</li>
