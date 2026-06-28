@@ -5,20 +5,11 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Netlify build target. The Lovable preview/build ignores the `nitro` preset
-// override (it forces Cloudflare internally), so the sandbox preview keeps
-// working unchanged. When Netlify runs `npm run build`, the `netlify` preset
-// produces the proper SSR output Netlify expects.
-//
-// Prerendering is intentionally disabled: on Netlify, TanStack Start runs as
-// SSR functions, so static prerender isn't required, and enabling it caused
-// the Lovable sandbox build (Cloudflare preset) to crash during the
-// prerender step.
+// Use Lovable's default Nitro preset (Cloudflare) so the published Lovable
+// site renders correctly. If deploying to Netlify/Vercel elsewhere, override
+// the preset in that environment's build config — not here.
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
-  },
-  nitro: {
-    preset: "netlify",
   },
 });
