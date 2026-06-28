@@ -358,11 +358,11 @@ const faqs = [
 
 function Logo({ light = false, className = "" }: { light?: boolean; className?: string }) {
   return (
-    <a href="#top" className={`inline-flex items-center ${className}`} aria-label="EM Services">
+    <a href="#top" className={`inline-flex items-center ${className}`} aria-label="EMT Services">
       <img
         src={logoFull}
-        alt="EM Services"
-        className={`h-14 w-auto sm:h-16 ${light ? "invert brightness-0" : ""}`}
+        alt="EMT Services"
+        className={`h-20 w-auto sm:h-24 ${light ? "invert brightness-0" : ""}`}
         style={light ? { filter: "brightness(0) invert(1)" } : undefined}
       />
     </a>
