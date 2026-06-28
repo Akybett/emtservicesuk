@@ -66,10 +66,10 @@ function GuidePage() {
         </h1>
         <div className="mt-4 h-1 w-12 rounded-full bg-navy" />
         <p className="mt-6 text-lg text-muted-foreground">
-          A short heads-up for organisers in the early planning stages — covering the three
-          areas we are most often asked about. Not a checklist to replace your risk
-          assessment, and not us telling you how to suck eggs. Just the things that tend to
-          move the needle, and the bits that catch people out.
+          A practical starting point for organisers planning medical, security and stewarding
+          cover. It is not a substitute for your own risk assessment or Event Management Plan —
+          just a friendly overview of the things that shape good cover, and the bits that often
+          catch people out.
         </p>
 
         <div className="mt-10 space-y-10 text-base leading-relaxed text-muted-foreground">
