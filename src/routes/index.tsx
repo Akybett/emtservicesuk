@@ -637,7 +637,7 @@ function Index() {
               <a href="#contact" className="text-white underline underline-offset-4">
                 Get in touch
               </a>{" "}
-              — we will tell you honestly whether we are the right fit.
+              — we will give you a straight answer on whether we are the right fit.
             </p>
           </div>
         </div>
