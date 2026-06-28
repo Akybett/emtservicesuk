@@ -332,11 +332,11 @@ const faqs = [
   },
   {
     q: "How do you ensure overall event safety and compliance?",
-    a: "Safety is built into the foundation of our service. Our operations are guided by director-level NEBOSH certifications and Level 4 Safeguarding qualifications, ensuring that every deployment strictly adheres to current UK health, safety, and welfare legislation.",
+    a: "Safety underpins everything we do. Operations are guided by director-level NEBOSH certification and Level 4 Safeguarding qualifications, and each deployment is built to meet current UK health, safety and welfare legislation.",
   },
   {
     q: "Can you assist with event planning and risk assessments?",
-    a: "Absolutely. With decades of hands-on experience, we offer comprehensive consultancy services. We can assist with drafting safety management plans, medical risk assessments, and liaising with local authorities or Safety Advisory Groups (SAG) on your behalf.",
+    a: "Yes. With decades of hands-on experience between the directors, we can help with safety management plans, medical risk assessments, and liaison with local authorities or Safety Advisory Groups (SAG) where useful.",
   },
   {
     q: "Are you fully insured?",
