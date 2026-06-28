@@ -1065,10 +1065,8 @@ function Index() {
             <div>
               <Logo light />
               <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/85">
-
                 Independent private event medical, security and safety services across
-                the UK. Owner-operated, 35 years of experience.{" "}
-                <span className="text-white/55">Not affiliated with the NHS or any ambulance trust.</span>
+                the UK. Owner-operated, with a combined 35+ years of experience.
               </p>
               <a
                 href="mailto:info@emtservices.uk"
