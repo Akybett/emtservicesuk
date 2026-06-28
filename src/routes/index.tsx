@@ -348,7 +348,7 @@ const faqs = [
   },
   {
     q: "How are bookings confirmed, and what about bad weather or cancellation?",
-    a: "Deposits, refunds and extras are handled on a case-by-case, client-by-client basis rather than as a blanket policy — we would rather have an honest conversation than hide behind small print. As a general guide: a deposit secures the date, and the balance is usually settled in advance of the event (especially for larger teams, where we need the funds upfront to cover staffing). If we have already committed staff to site and the event is then cancelled — including for force majeure reasons such as weather — the honest position is that our team is already contracted and has to be paid, so unfortunately that cost has to be passed on. Talk to us early if circumstances change and we will work through it with you fairly.",
+    a: "Deposits, refunds and extras are handled on a case-by-case, client-by-client basis rather than as a blanket policy — we would rather have a straightforward conversation than hide behind small print. As a general guide: a deposit secures the date, and the balance is usually settled in advance of the event (especially for larger teams, where we need the funds upfront to cover staffing). If we have already committed staff to site and the event is then cancelled — including for force majeure reasons such as weather — our team is already contracted and has to be paid, so unfortunately that cost has to be passed on. Talk to us early if circumstances change and we will work through it with you fairly.",
   },
   {
     q: "Do you cover small or bespoke private events?",
