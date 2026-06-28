@@ -284,7 +284,7 @@ const GOOGLE_REVIEW_URL =
 const gallery = [
   { src: imgCamper, alt: "Outdoor festival stage at Camper Marmalade", label: "Camper Marmalade", href: "https://campermarmalade.onlineticketseller.com/" },
   { src: imgCarnival, alt: "Eastbourne Carnival parade with colourful feathered costumes", label: "Eastbourne Carnival", href: "https://www.eastbournecarnival.com/" },
-  { src: imgCultural, alt: "Open-air festival crowd at sunset", label: "Open-Air Festival" },
+  { src: imgCultural, alt: "Hot Rod Rumble classic car and hot rod show", label: "Hot Rod Rumble", href: "https://www.hotrodrumble.co.uk/" },
   { src: imgPride, alt: "Performers at Eastbourne Pride in vibrant costumes", label: "Eastbourne Pride", href: "https://www.eastbourne-pride.com/" },
   { src: imgIndoor, alt: "Indoor live music event with stage lighting", label: "Indoor Music Event" },
   { src: imgCastle, alt: "Medieval Heritage Festival re-enactment", label: "Medieval Heritage Festival", href: "https://herstmonceux-castle.com/" },
