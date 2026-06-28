@@ -69,7 +69,7 @@ const imgFire = firemarshalAsset.url;
 
 const TITLE = "EMT Services | Professional Medical & Security Event Support";
 const DESCRIPTION =
-  "Independent UK event safety company providing professional medical cover, SIA-licensed security, stewarding and fire safety for festivals, cultural and corporate events. Owner-operated with 35 years of hands-on experience.";
+  "Independent UK event safety company providing professional medical cover, SIA-licensed security, stewarding and fire safety for festivals, cultural and corporate events. Owner-operated, with a combined 35+ years of hands-on experience.";
 const SITE_URL = "https://emtservices.uk/";
 
 export const Route = createFileRoute("/")({
@@ -161,7 +161,7 @@ const services = [
     icon: Flame,
     title: "Fire Safety Operations",
     image: imgFire,
-    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. Andy holds a NEBOSH certification — a gold-standard credential in occupational health, safety, and risk management — ensuring director-level qualification is applied to every event we cover.",
+    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. Andy holds a NEBOSH certification — a recognised qualification in occupational health, safety and risk management — applied to every event we cover.",
   },
 ];
 
@@ -183,15 +183,15 @@ const eventTypes = [
 const foundations = [
   {
     title: "How We Staff Events",
-    copy: "We do not maintain a large permanent roster. Instead, we bring in vetted specialists suited to each event. This keeps us flexible and means we only place people we genuinely trust. We are always honest about our capacity and will never overpromise on staffing numbers.",
+    copy: "We do not maintain a large permanent roster. Instead, we bring in vetted specialists suited to each event. This keeps us flexible and means we only place people we genuinely trust. We are straightforward about our capacity and will not overpromise on staffing numbers.",
   },
   {
     title: "Vetting & Accountability",
     copy: "Our team is built through personal recommendations and direct approaches — not agency pools. We personally vet every operative, actively follow up references, and consult trusted industry colleagues. Our SIA staff are seasoned professionals with real operational experience.",
   },
   {
-    title: "Qualified at Director Level",
-    copy: "As co-owners, Sid and Andy both hold a wide variety of professional and industry-recognised qualifications. Specifically regarding health, safety, and fire safety, Andy holds a NEBOSH certification, ensuring EMT Services brings director-level qualification to this critical area. Both directors are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT). This is offered as reassurance, not as a boast.",
+    title: "Director-Level Qualifications",
+    copy: "As co-owners, Sid and Andy both hold a range of professional and industry-recognised qualifications. On health, safety and fire safety specifically, Andy holds a NEBOSH certification. Both directors are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
   },
   {
     title: "Directors on the Ground",
@@ -203,7 +203,7 @@ const foundations = [
   },
   {
     title: "Pricing & Fair Pay",
-    copy: "We are not interested in competing on price alone. We pay our staff fairly for the skill and experience they bring, and that is reflected in what we charge. We are unlikely to be the cheapest option — but our pricing will always be fair, transparent, and clearly explained.",
+    copy: "Properly trained, vetted and fairly paid teams cost money, and that is reflected in what we charge. Our pricing will always be fair, transparent and clearly explained — and matched to the cover your event actually needs.",
   },
   {
     title: "Operating to the Highest Standards",
@@ -332,11 +332,11 @@ const faqs = [
   },
   {
     q: "How do you ensure overall event safety and compliance?",
-    a: "Safety is built into the foundation of our service. Our operations are guided by director-level NEBOSH certifications and Level 4 Safeguarding qualifications, ensuring that every deployment strictly adheres to current UK health, safety, and welfare legislation.",
+    a: "Safety underpins everything we do. Operations are guided by director-level NEBOSH certification and Level 4 Safeguarding qualifications, and each deployment is built to meet current UK health, safety and welfare legislation.",
   },
   {
     q: "Can you assist with event planning and risk assessments?",
-    a: "Absolutely. With decades of hands-on experience, we offer comprehensive consultancy services. We can assist with drafting safety management plans, medical risk assessments, and liaising with local authorities or Safety Advisory Groups (SAG) on your behalf.",
+    a: "Yes. With decades of hands-on experience between the directors, we can help with safety management plans, medical risk assessments, and liaison with local authorities or Safety Advisory Groups (SAG) where useful.",
   },
   {
     q: "Are you fully insured?",
@@ -344,11 +344,11 @@ const faqs = [
   },
   {
     q: "How far in advance should we book you?",
-    a: "As much lead time as possible, please. Larger events with SAG involvement are best discussed months ahead so cover can be designed properly and built into your licensing submission. Shorter-notice bookings are sometimes possible depending on staff availability — get in touch and we will be honest about what we can offer.",
+    a: "As much lead time as possible, please. Larger events with SAG involvement are best discussed months ahead so cover can be designed properly and built into your licensing submission. Shorter-notice bookings are sometimes possible depending on staff availability — get in touch and we will tell you straight what we can offer.",
   },
   {
     q: "How are bookings confirmed, and what about bad weather or cancellation?",
-    a: "Deposits, refunds and extras are handled on a case-by-case, client-by-client basis rather than as a blanket policy — we would rather have an honest conversation than hide behind small print. As a general guide: a deposit secures the date, and the balance is usually settled in advance of the event (especially for larger teams, where we need the funds upfront to cover staffing). If we have already committed staff to site and the event is then cancelled — including for force majeure reasons such as weather — the honest position is that our team is already contracted and has to be paid, so unfortunately that cost has to be passed on. Talk to us early if circumstances change and we will work through it with you fairly.",
+    a: "Deposits, refunds and extras are handled on a case-by-case, client-by-client basis rather than as a blanket policy — we would rather have a straightforward conversation than hide behind small print. As a general guide: a deposit secures the date, and the balance is usually settled in advance of the event (especially for larger teams, where we need the funds upfront to cover staffing). If we have already committed staff to site and the event is then cancelled — including for force majeure reasons such as weather — our team is already contracted and has to be paid, so unfortunately that cost has to be passed on. Talk to us early if circumstances change and we will work through it with you fairly.",
   },
   {
     q: "Do you cover small or bespoke private events?",
@@ -478,17 +478,17 @@ function Index() {
           />
 
           <h1 className="mx-auto mt-10 max-w-3xl text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Event Safety.
+            Event Safety,
             <br />
-            35 Years of Hands-On Experience.
+            Built on Decades of Experience.
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-balance text-base leading-relaxed text-white/75 sm:text-lg">
-            A small, owner-operated firm led by two directors with over three decades of
-            ground-level experience — honest about what we do, transparent about how we
-            work, and personally invested in every event we cover.
+            A small, owner-operated firm led by two directors with a combined 35+ years
+            of ground-level experience — clear about what we do, transparent about how
+            we work, and personally invested in every event we cover.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-balance text-xs uppercase tracking-[0.2em] text-white/80">
-            Independent private event medical & security support — not an NHS ambulance service.
+            Independent private event safety provider.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Button
@@ -509,7 +509,7 @@ function Index() {
           </div>
           <ul className="mx-auto mt-14 flex max-w-3xl flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs uppercase tracking-wider text-white/85 sm:text-sm">
             {[
-              "35 Years' Experience",
+              "35+ Years Combined",
               "Owner-Operated",
               "SIA-Licensed",
               "NEBOSH Qualified",
@@ -637,7 +637,7 @@ function Index() {
               <a href="#contact" className="text-white underline underline-offset-4">
                 Get in touch
               </a>{" "}
-              — we will tell you honestly whether we are the right fit.
+              — we will give you a straight answer on whether we are the right fit.
             </p>
           </div>
         </div>
@@ -649,7 +649,7 @@ function Index() {
           <SectionHeading
             kicker="Foundations"
             title="The Foundation of Our Service"
-            subtitle="We are not a large company, and we do not pretend to be. These are the principles the directors of EMT Services have worked to every day across 35 years in the industry."
+            subtitle="We are not a large company, and we do not pretend to be. These are the principles the directors of EMT Services have worked to every day across a combined 35+ years in the industry."
           />
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {foundations.map((f) => (
@@ -739,7 +739,7 @@ function Index() {
           <SectionHeading
             kicker="Track record"
             title="Events We Have Covered"
-            subtitle="An honest cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
+            subtitle="A representative cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
             align="left"
           />
           <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
@@ -995,7 +995,7 @@ function Index() {
                 team. We always love to sit down and discuss your needs, see where we
                 can help, and suggest ideas. Fill in what you can — including a phone
                 number and the best time to reach you if you would prefer a call — and
-                we will give you an honest assessment of what your event requires and
+                we will give you a clear assessment of what your event requires and
                 whether we are the right fit.
               </p>
               <p className="mt-3 text-sm font-medium text-navy">
@@ -1024,7 +1024,7 @@ function Index() {
                   Based in the <span className="font-semibold text-navy">South East of England</span> — our home patch for festivals, castle and estate events, and cultural gatherings.
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  We cover events across the wider UK on request. Get in touch and we will let you know honestly whether we are the right fit for your location and dates.
+                  We cover events across the wider UK on request. Get in touch and we will let you know whether we are the right fit for your location and dates.
                 </p>
               </div>
               <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -1065,10 +1065,8 @@ function Index() {
             <div>
               <Logo light />
               <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/85">
-
                 Independent private event medical, security and safety services across
-                the UK. Owner-operated, 35 years of experience.{" "}
-                <span className="text-white/55">Not affiliated with the NHS or any ambulance trust.</span>
+                the UK. Owner-operated, with a combined 35+ years of experience.
               </p>
               <a
                 href="mailto:info@emtservices.uk"
