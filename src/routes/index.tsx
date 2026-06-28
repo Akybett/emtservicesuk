@@ -40,7 +40,7 @@ import {
 
 import heroBg from "@/assets/hero-bg.jpg";
 import castleAsset from "@/assets/medieval-heritage-festival.jpg.asset.json";
-import festivalAsset from "@/assets/open-air-festival.avif.asset.json";
+import festivalAsset from "@/assets/hot-rod-rumble.png.asset.json";
 import indoorAsset from "@/assets/indoor-music.jpg.asset.json";
 import camperAsset from "@/assets/camper-marmalade.jpg.asset.json";
 import prideAsset from "@/assets/eastbourne-pride.jpg.asset.json";
