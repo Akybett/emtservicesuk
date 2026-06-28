@@ -176,10 +176,12 @@ function GuidePage() {
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>
                 <strong>Bar and alcohol areas.</strong> A venue or event that sells alcohol usually
-                has licensing conditions that require SIA-licensed door supervision or stewarding in
-                specific ratios. The exact requirement comes from your licensing officer and SAG, but
-                a common starting point in busy bar or late-night areas is around one SIA door
-                supervisor per 100 people. Stewards cannot be substituted for SIA roles here.
+                has licensing conditions that require SIA-licensed door supervision in specific
+                ratios. The exact requirement comes from your licensing officer and SAG, but a common
+                starting point in busy bar or late-night areas is around one SIA door supervisor per
+                100 patrons. This is a security-to-patron ratio, not a way to replace medical cover or
+                fire safety marshals — those are separate provisions and must be staffed in their own
+                right.
               </li>
               <li>
                 <strong>Crowd-to-medic thinking.</strong> Industry guidance (including the Purple
