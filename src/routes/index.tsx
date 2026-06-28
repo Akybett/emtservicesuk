@@ -739,7 +739,7 @@ function Index() {
           <SectionHeading
             kicker="Track record"
             title="Events We Have Covered"
-            subtitle="An honest cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
+            subtitle="A representative cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
             align="left"
           />
           <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
