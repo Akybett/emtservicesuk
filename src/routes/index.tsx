@@ -183,7 +183,7 @@ const eventTypes = [
 const foundations = [
   {
     title: "How We Staff Events",
-    copy: "We do not maintain a large permanent roster. Instead, we bring in vetted specialists suited to each event. This keeps us flexible and means we only place people we genuinely trust. We are always honest about our capacity and will never overpromise on staffing numbers.",
+    copy: "We do not maintain a large permanent roster. Instead, we bring in vetted specialists suited to each event. This keeps us flexible and means we only place people we genuinely trust. We are straightforward about our capacity and will not overpromise on staffing numbers.",
   },
   {
     title: "Vetting & Accountability",
