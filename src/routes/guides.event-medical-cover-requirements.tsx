@@ -196,10 +196,11 @@ function GuidePage() {
                 can breach licensing conditions and invalidate insurance.
               </li>
               <li>
-                <strong>No dual roles on the day.</strong> A person booked as security cannot
-                simultaneously wear a steward's hat, and vice versa. Dual roles are frowned upon
-                by insurers because they blur lines of authority and can leave gaps in cover at the
-                moments they matter most. Security staff are security; stewards are stewards.
+                <strong>No dual roles on the day.</strong> One person cannot act as security,
+                medic and fire safety marshal all at once. SIA, medical and fire safety are separate
+                functions with separate training, insurance and lines of authority. Dual hatting is
+                frowned upon by insurers because it creates gaps at the exact moments cover is
+                needed.
               </li>
             </ul>
             <p className="mt-3">
@@ -213,7 +214,7 @@ function GuidePage() {
             <h2 className="text-xl font-semibold text-navy">Things that catch people out</h2>
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>Ticket totals being used in place of peak concurrent attendance</li>
-              <li>Dual-role staffing where one person is expected to be both security and steward</li>
+              <li>Dual-role staffing where one person is expected to cover security, medical and fire safety roles</li>
               <li>Stewards being asked to do work that legally requires SIA cover</li>
               <li>Welfare and mental health being lumped in with clinical cover</li>
               <li>Late engagement with the SAG, licensing authority and NHS ambulance trust</li>
