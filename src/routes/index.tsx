@@ -182,34 +182,30 @@ const eventTypes = [
 
 const foundations = [
   {
-    title: "How We Staff Events",
-    copy: "We do not maintain a large permanent roster. Instead, we bring in vetted specialists suited to each event. This keeps us flexible and means we only place people we genuinely trust. We are straightforward about our capacity and will not overpromise on staffing numbers.",
+    title: "Tailored Staffing & Vetting",
+    copy: "Rather than drawing from large agency pools, we build teams suited to each event. Operatives come to us through personal recommendation and direct approach, are vetted by the directors, and have their references followed up. We are straightforward about our capacity and will not overpromise on numbers.",
   },
   {
-    title: "Vetting & Accountability",
-    copy: "Our team is built through personal recommendations and direct approaches — not agency pools. We personally vet every operative, actively follow up references, and consult trusted industry colleagues. Our SIA staff are seasoned professionals with real operational experience.",
+    title: "Industry-Recognised Qualifications",
+    copy: "Our planning is guided by recognised credentials held at director level, including NEBOSH and Level 4 Safeguarding. We are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
   },
   {
-    title: "Director-Level Qualifications",
-    copy: "As co-owners, Sid and Andy both hold a range of professional and industry-recognised qualifications. On health, safety and fire safety specifically, Andy holds a NEBOSH certification. Both directors are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
+    title: "A Hands-On Approach",
+    copy: "As co-owners, Sid and Andy try to be directly involved in the operation. Subject to availability, you will often find us working on the ground alongside the team as team leads or extra hands — that practical approach is how we have always preferred to operate.",
   },
   {
-    title: "Directors on the Ground",
-    copy: "As co-owners, Sid and Andy typically work on the ground at events themselves — either as team leads or as additional personnel. This is always subject to our availability and other commitments, but it reflects the hands-on approach that has been central to how we have operated throughout our careers.",
+    title: "Experienced, Approachable Teams",
+    copy: "Most of our team bring a wealth of life experience and a seasoned professional background to their work. We value that maturity — the ability to read a situation calmly, engage with people respectfully, and de-escalate where needed.",
   },
   {
-    title: "Experienced, Seasoned Teams",
-    copy: "The majority of our team brings a wealth of life experience and a seasoned professional background to their work. That maturity — in how they handle people, read situations, and de-escalate — is something we actively look for and value when building our teams.",
+    title: "Fair Pricing & Transparent Value",
+    copy: "Properly trained, vetted and fairly paid teams cost money, and our charges reflect that. We will not race to the bottom on price where public safety is concerned. Pricing is always transparent and matched to the cover your event actually needs.",
   },
   {
-    title: "Pricing & Fair Pay",
-    copy: "Properly trained, vetted and fairly paid teams cost money, and that is reflected in what we charge. Our pricing will always be fair, transparent and clearly explained — and matched to the cover your event actually needs.",
-  },
-  {
-    title: "Operating to the Highest Standards",
+    title: "Operating to Recognised Standards",
     copy: (
       <>
-        Every event we plan and manage is structured in strict accordance with the{" "}
+        We plan and manage events in line with the{" "}
         <a
           href="https://www.thepurpleguide.co.uk/"
           target="_blank"
@@ -227,17 +223,17 @@ const foundations = [
         >
           SGSA's Green Guide
         </a>
-        .
+        , so medical and security provision lines up with the frameworks organisers and licensing officers expect.
       </>
     ),
   },
   {
     title: "Inclusive by Necessity",
-    copy: "We actively build teams that reflect the crowds they manage. Understanding the people in front of you matters. Over the years we have found that diverse, well-matched teams simply perform better in complex crowd environments.",
+    copy: "We try to build teams that reflect the crowds they manage. Understanding the people in front of you matters, and we have found that diverse, well-matched teams tend to perform better in complex crowd environments.",
   },
   {
-    title: "ICO Registered & Know Our Limits",
-    copy: "We are registered with the Information Commissioner's Office (ICO). Any data you share with us is held securely under current legislation. And if a project is genuinely beyond what we can deliver to our standard, we say so — we would rather lose the work than let a client down.",
+    title: "Honesty & Data Protection",
+    copy: "We are registered with the Information Commissioner's Office (ICO), so any data you share is held securely under current legislation. We also try to know our limits — if a project is beyond what we can deliver to our standard, we will say so and step aside rather than let an organiser down.",
   },
 ];
 
@@ -379,14 +375,14 @@ function Index() {
   const liveReviews: GoogleReview[] = googleData.reviews ?? [];
   const displayReviews =
     liveReviews.length > 0
-      ? liveReviews.map((r) => ({
+      ? liveReviews.slice(0, 4).map((r) => ({
           name: r.author_name,
           text: r.text,
           rating: r.rating,
           when: r.relative_time_description,
           photo: r.profile_photo_url,
         }))
-      : reviews.map((r) => ({
+      : reviews.slice(0, 4).map((r) => ({
           name: r.name,
           text: r.text,
           rating: 5,
@@ -713,6 +709,31 @@ function Index() {
               })}
             </div>
 
+            {/* Friends we work with */}
+            <div className="mt-16">
+              <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+                Friends We Work With
+              </h2>
+              <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-border bg-card p-7 shadow-sm">
+                <h3 className="text-lg font-semibold text-navy">
+                  Online Ticket Seller
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes — and they have been a genuine pleasure to collaborate with on shared events.
+                </p>
+                <p className="mt-4">
+                  <a
+                    href="https://www.onlineticketseller.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                  >
+                    Visit onlineticketseller.com →
+                  </a>
+                </p>
+              </div>
+            </div>
+
             {/* Google Reviews CTA */}
             <div className="mt-10 flex flex-col items-center gap-3 text-center">
               <p className="text-sm text-muted-foreground">
@@ -818,6 +839,9 @@ function Index() {
                   <span>· {totalReviews} reviews</span>
                 </a>
               </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Showing our four most recent reviews — see all {totalReviews} on Google.
+              </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {displayReviews.map((r, idx) => (
                   <blockquote
