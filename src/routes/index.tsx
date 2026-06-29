@@ -23,9 +23,6 @@ import {
   
   Menu,
   X,
-  Award,
-  FileCheck,
-  ShieldCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -57,10 +54,8 @@ import securityAsset from "@/assets/security.jpg.asset.json";
 import medicalAsset from "@/assets/medical.jpg.asset.json";
 import stewardAsset from "@/assets/steward.jpg.asset.json";
 import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
-import aohtAsset from "@/assets/aoht-member.png.asset.json";
-import protrainingsAsset from "@/assets/protrainings.png.asset.json";
 import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
-import icoAsset from "@/assets/ico-logo.jpg.asset.json";
+
 
 const imgSecurity = securityAsset.url;
 const imgMedical = medicalAsset.url;
@@ -238,42 +233,6 @@ const foundations = [
   },
 ];
 
-const memberships = [
-  {
-    org: "Association of Healthcare Trainers",
-    status: "Member",
-    description:
-      "Committed to delivering training that meets recognised healthcare standards.",
-    icon: Award,
-    logo: aohtAsset.url,
-    logoAlt: "Association of Healthcare Trainers (AOHT) official member logo",
-  },
-  {
-    org: "ProTrainings & Highfield",
-    status: "Registered Trainers",
-    description:
-      "Fully certified to deliver accredited, high-quality training programmes.",
-    icon: ShieldCheck,
-    logo: protrainingsAsset.url,
-    logoAlt: "ProTrainings UK registered trainer official logo",
-  },
-  {
-    org: "Information Commissioner's Office",
-    status: "Registered",
-    description:
-      "Fully compliant with UK data protection legislation.",
-    icon: FileCheck,
-    logo: icoAsset.url,
-    logoAlt: "Information Commissioner's Office (ICO) official logo",
-  },
-  {
-    org: "ResusReady",
-    status: "Member RR-715313",
-    description:
-      "Actively registered and maintaining current resuscitation training standards.",
-    icon: HeartPulse,
-  },
-];
 
 const GOOGLE_REVIEW_URL =
   "https://g.page/r/CWbm1yja006BEBM/review";
@@ -667,48 +626,6 @@ function Index() {
             ))}
           </div>
 
-          {/* Memberships & Accreditations */}
-          <div className="mt-20">
-            <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-              Memberships & Accreditations
-            </h2>
-            <div className="mt-8 grid gap-6 md:grid-cols-2">
-              {memberships.map((m) => {
-                const Icon = m.icon;
-                return (
-                  <article
-                    key={m.org}
-                    className="relative flex flex-col rounded-2xl bg-card p-7 shadow-[0_4px_20px_-8px_rgba(15,23,42,0.12)] ring-1 ring-black/5 transition-shadow hover:shadow-[0_8px_28px_-10px_rgba(15,23,42,0.18)]"
-                  >
-                    {m.logo && (
-                      <img
-                        src={m.logo}
-                        alt={m.logoAlt}
-                        loading="lazy"
-                        className="absolute right-6 top-6 h-12 w-auto max-w-[110px] object-contain opacity-90"
-                      />
-                    )}
-                    <div
-                      aria-hidden="true"
-                      className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-navy"
-                    >
-                      <Icon size={18} />
-                    </div>
-                    <h3 className="pr-28 text-xl font-bold leading-snug tracking-tight text-navy">
-                      {m.org}
-                    </h3>
-                    <div className="mt-2">
-                      <span className="inline-flex items-center rounded-full bg-navy/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy">
-                        {m.status}
-                      </span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                      {m.description}
-                    </p>
-                  </article>
-                );
-              })}
-            </div>
 
             {/* Friends we work with */}
             <div className="mt-16">
@@ -768,7 +685,6 @@ function Index() {
             </div>
           </div>
 
-        </div>
       </section>
 
       {/* Trust: gallery + reviews */}
@@ -856,9 +772,6 @@ function Index() {
                   <span>· {totalReviews} reviews</span>
                 </a>
               </div>
-              <p className="mt-3 text-xs text-muted-foreground">
-                Showing our four most recent reviews — see all {totalReviews} on Google.
-              </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {displayReviews.map((r, idx) => (
                   <blockquote
