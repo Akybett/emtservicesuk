@@ -709,6 +709,31 @@ function Index() {
               })}
             </div>
 
+            {/* Friends we work with */}
+            <div className="mt-16">
+              <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+                Friends We Work With
+              </h2>
+              <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-border bg-card p-7 shadow-sm">
+                <h3 className="text-lg font-semibold text-navy">
+                  Online Ticket Seller
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes — and they have been a genuine pleasure to collaborate with on shared events.
+                </p>
+                <p className="mt-4">
+                  <a
+                    href="https://www.onlineticketseller.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                  >
+                    Visit onlineticketseller.com →
+                  </a>
+                </p>
+              </div>
+            </div>
+
             {/* Google Reviews CTA */}
             <div className="mt-10 flex flex-col items-center gap-3 text-center">
               <p className="text-sm text-muted-foreground">
