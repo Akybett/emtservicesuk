@@ -375,14 +375,14 @@ function Index() {
   const liveReviews: GoogleReview[] = googleData.reviews ?? [];
   const displayReviews =
     liveReviews.length > 0
-      ? liveReviews.map((r) => ({
+      ? liveReviews.slice(0, 4).map((r) => ({
           name: r.author_name,
           text: r.text,
           rating: r.rating,
           when: r.relative_time_description,
           photo: r.profile_photo_url,
         }))
-      : reviews.map((r) => ({
+      : reviews.slice(0, 4).map((r) => ({
           name: r.name,
           text: r.text,
           rating: 5,
