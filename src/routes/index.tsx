@@ -59,6 +59,7 @@ import stewardAsset from "@/assets/steward.jpg.asset.json";
 import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
 import aohtAsset from "@/assets/aoht-member.png.asset.json";
 import protrainingsAsset from "@/assets/protrainings.png.asset.json";
+import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
 import icoAsset from "@/assets/ico-logo.jpg.asset.json";
 
 const imgSecurity = securityAsset.url;
@@ -714,23 +715,39 @@ function Index() {
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
                 Friends We Work With
               </h2>
-              <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-border bg-card p-7 shadow-sm">
-                <h3 className="text-lg font-semibold text-navy">
-                  Online Ticket Seller
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes — and they have been a genuine pleasure to collaborate with on shared events.
-                </p>
-                <p className="mt-4">
-                  <a
-                    href="https://www.onlineticketseller.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
-                  >
-                    Visit onlineticketseller.com →
-                  </a>
-                </p>
+              <div className="mx-auto mt-8 flex max-w-3xl flex-col items-center gap-6 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start sm:gap-7">
+                <a
+                  href="https://www.onlineticketseller.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0"
+                  aria-label="Visit Online Ticket Seller"
+                >
+                  <img
+                    src={onlineTicketSellerAsset.url}
+                    alt="Online Ticket Seller logo"
+                    loading="lazy"
+                    className="h-20 w-auto"
+                  />
+                </a>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-lg font-semibold text-navy">
+                    Online Ticket Seller
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.
+                  </p>
+                  <p className="mt-4">
+                    <a
+                      href="https://www.onlineticketseller.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                    >
+                      Visit onlineticketseller.com →
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
 
