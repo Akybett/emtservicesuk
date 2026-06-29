@@ -59,6 +59,7 @@ import stewardAsset from "@/assets/steward.jpg.asset.json";
 import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
 import aohtAsset from "@/assets/aoht-member.png.asset.json";
 import protrainingsAsset from "@/assets/protrainings.png.asset.json";
+import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
 import icoAsset from "@/assets/ico-logo.jpg.asset.json";
 
 const imgSecurity = securityAsset.url;
