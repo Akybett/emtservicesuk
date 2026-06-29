@@ -685,7 +685,6 @@ function Index() {
             </div>
           </div>
 
-        </div>
       </section>
 
       {/* Trust: gallery + reviews */}
