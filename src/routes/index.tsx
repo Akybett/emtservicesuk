@@ -839,6 +839,9 @@ function Index() {
                   <span>· {totalReviews} reviews</span>
                 </a>
               </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Showing our four most recent reviews — see all {totalReviews} on Google.
+              </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {displayReviews.map((r, idx) => (
                   <blockquote
