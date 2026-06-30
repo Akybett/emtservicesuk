@@ -659,38 +659,59 @@ function Index() {
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
                 Friends We Work With
               </h2>
-              <div className="mx-auto mt-8 flex max-w-3xl flex-col items-center gap-6 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start sm:gap-7">
-                <a
-                  href="https://www.onlineticketseller.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0"
-                  aria-label="Visit Online Ticket Seller"
-                >
-                  <img
-                    src={onlineTicketSellerAsset.url}
-                    alt="Online Ticket Seller logo"
-                    loading="lazy"
-                    className="h-20 w-auto"
-                  />
-                </a>
-                <div className="text-center sm:text-left">
-                  <h3 className="text-lg font-semibold text-navy">
-                    Online Ticket Seller
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.
-                  </p>
-                  <p className="mt-4">
-                    <a
-                      href="https://www.onlineticketseller.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
-                    >
-                      Visit onlineticketseller.com →
-                    </a>
-                  </p>
+              <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-2">
+                <div className="flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start">
+                  <a
+                    href="https://www.onlineticketseller.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0"
+                    aria-label="Visit Online Ticket Seller"
+                  >
+                    <img
+                      src={onlineTicketSellerAsset.url}
+                      alt="Online Ticket Seller logo"
+                      loading="lazy"
+                      className="h-20 w-auto"
+                    />
+                  </a>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-lg font-semibold text-navy">
+                      Online Ticket Seller
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.
+                    </p>
+                    <p className="mt-4">
+                      <a
+                        href="https://www.onlineticketseller.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                      >
+                        Visit onlineticketseller.com →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start">
+                  <div className="shrink-0">
+                    <img
+                      src={codaLogoAsset.url}
+                      alt="Coda Pharmacy logo"
+                      loading="lazy"
+                      className="h-20 w-auto"
+                    />
+                  </div>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-lg font-semibold text-navy">
+                      Coda Pharmacy
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
