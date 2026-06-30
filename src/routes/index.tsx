@@ -164,18 +164,33 @@ const services = [
 ];
 
 const eventTypes = [
-  "Music Festivals",
-  "Cultural Events",
-  "Carnivals & Parades",
-  "Pride Events",
-  "Rockabilly Events",
-  "Camping Shows",
-  "Castle & Estate Events",
-  "Fireworks Displays",
-  "Corporate Events",
-  "Charity Events",
-  "Historical Events",
-  "Sporting Events",
+  {
+    title: "Music, festivals & outdoor shows",
+    items: [
+      "Music festivals",
+      "Camping shows",
+      "Fireworks displays",
+      "Rockabilly events",
+    ],
+  },
+  {
+    title: "Community, cultural & heritage events",
+    items: [
+      "Carnivals & parades",
+      "Pride events",
+      "Cultural celebrations",
+      "Historical & castle events",
+    ],
+  },
+  {
+    title: "Corporate, sporting & private events",
+    items: [
+      "Corporate events",
+      "Sporting events",
+      "Charity events",
+      "Private parties",
+    ],
+  },
 ];
 
 const foundations = [
