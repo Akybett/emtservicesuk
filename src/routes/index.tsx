@@ -55,6 +55,8 @@ import medicalAsset from "@/assets/medical.jpg.asset.json";
 import stewardAsset from "@/assets/steward.jpg.asset.json";
 import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
 import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
+import codaLogoAsset from "@/assets/coda-logo.jpg.asset.json";
+
 
 
 const imgSecurity = securityAsset.url;
@@ -162,18 +164,33 @@ const services = [
 ];
 
 const eventTypes = [
-  "Music Festivals",
-  "Cultural Events",
-  "Carnivals & Parades",
-  "Pride Events",
-  "Rockabilly Events",
-  "Camping Shows",
-  "Castle & Estate Events",
-  "Fireworks Displays",
-  "Corporate Events",
-  "Charity Events",
-  "Historical Events",
-  "Sporting Events",
+  {
+    title: "Music, festivals & outdoor shows",
+    items: [
+      "Music festivals",
+      "Camping shows",
+      "Fireworks displays",
+      "Rockabilly events",
+    ],
+  },
+  {
+    title: "Community, cultural & heritage events",
+    items: [
+      "Carnivals & parades",
+      "Pride events",
+      "Cultural celebrations",
+      "Historical & castle events",
+    ],
+  },
+  {
+    title: "Corporate, sporting & private events",
+    items: [
+      "Corporate events",
+      "Sporting events",
+      "Charity events",
+      "Private parties",
+    ],
+  },
 ];
 
 const foundations = [
@@ -541,16 +558,26 @@ function Index() {
             <p className="mx-auto mt-4 max-w-3xl text-center text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
               From intimate gatherings to large-scale events
             </p>
-            <ul className="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-2.5">
-              {eventTypes.map((t) => (
-                <li
-                  key={t}
-                  className="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm"
+            <div className="mx-auto mt-12 grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {eventTypes.map((group) => (
+                <div
+                  key={group.title}
+                  className="rounded-2xl border border-border bg-card p-5 shadow-sm"
                 >
-                  {t}
-                </li>
+                  <h4 className="text-sm font-semibold text-navy">
+                    {group.title}
+                  </h4>
+                  <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="mt-1.5 block h-1 w-1 rounded-full bg-navy" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 
@@ -632,38 +659,59 @@ function Index() {
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
                 Friends We Work With
               </h2>
-              <div className="mx-auto mt-8 flex max-w-3xl flex-col items-center gap-6 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start sm:gap-7">
-                <a
-                  href="https://www.onlineticketseller.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0"
-                  aria-label="Visit Online Ticket Seller"
-                >
-                  <img
-                    src={onlineTicketSellerAsset.url}
-                    alt="Online Ticket Seller logo"
-                    loading="lazy"
-                    className="h-20 w-auto"
-                  />
-                </a>
-                <div className="text-center sm:text-left">
-                  <h3 className="text-lg font-semibold text-navy">
-                    Online Ticket Seller
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.
-                  </p>
-                  <p className="mt-4">
-                    <a
-                      href="https://www.onlineticketseller.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
-                    >
-                      Visit onlineticketseller.com →
-                    </a>
-                  </p>
+              <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-2">
+                <div className="flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start">
+                  <a
+                    href="https://www.onlineticketseller.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0"
+                    aria-label="Visit Online Ticket Seller"
+                  >
+                    <img
+                      src={onlineTicketSellerAsset.url}
+                      alt="Online Ticket Seller logo"
+                      loading="lazy"
+                      className="h-20 w-auto"
+                    />
+                  </a>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-lg font-semibold text-navy">
+                      Online Ticket Seller
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.
+                    </p>
+                    <p className="mt-4">
+                      <a
+                        href="https://www.onlineticketseller.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                      >
+                        Visit onlineticketseller.com →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start">
+                  <div className="shrink-0">
+                    <img
+                      src={codaLogoAsset.url}
+                      alt="Coda Pharmacy logo"
+                      loading="lazy"
+                      className="h-20 w-auto"
+                    />
+                  </div>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-lg font-semibold text-navy">
+                      Coda Pharmacy
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
