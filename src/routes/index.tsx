@@ -55,6 +55,8 @@ import medicalAsset from "@/assets/medical.jpg.asset.json";
 import stewardAsset from "@/assets/steward.jpg.asset.json";
 import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
 import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
+import codaLogoAsset from "@/assets/coda-logo.jpg.asset.json";
+
 
 
 const imgSecurity = securityAsset.url;
