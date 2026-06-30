@@ -558,16 +558,26 @@ function Index() {
             <p className="mx-auto mt-4 max-w-3xl text-center text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
               From intimate gatherings to large-scale events
             </p>
-            <ul className="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-2.5">
-              {eventTypes.map((t) => (
-                <li
-                  key={t}
-                  className="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm"
+            <div className="mx-auto mt-12 grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {eventTypes.map((group) => (
+                <div
+                  key={group.title}
+                  className="rounded-2xl border border-border bg-card p-5 shadow-sm"
                 >
-                  {t}
-                </li>
+                  <h4 className="text-sm font-semibold text-navy">
+                    {group.title}
+                  </h4>
+                  <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="mt-1.5 block h-1 w-1 rounded-full bg-navy" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 
