@@ -145,8 +145,21 @@
     border-color: var(--color-border);
   }
 
+  /* Larger base font on mobile — this is a text-heavy site and most visitors are on phones. */
+  html {
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    line-height: 1.6;
   }
 }

@@ -38,13 +38,13 @@ import {
 import heroBg from "@/assets/hero-bg.jpg";
 import castleAsset from "@/assets/medieval-heritage-festival.jpg.asset.json";
 import festivalAsset from "@/assets/hot-rod-rumble.png.asset.json";
-import indoorAsset from "@/assets/indoor-music.jpg.asset.json";
+import hastingsAsset from "@/assets/hastings-pirate-festival.png.asset.json";
 import camperAsset from "@/assets/camper-marmalade.jpg.asset.json";
 import prideAsset from "@/assets/eastbourne-pride.jpg.asset.json";
 import carnivalAsset from "@/assets/eastbourne-carnival.jpg.asset.json";
 const imgCastle = castleAsset.url;
 const imgCultural = festivalAsset.url;
-const imgIndoor = indoorAsset.url;
+const imgHastings = hastingsAsset.url;
 const imgCamper = camperAsset.url;
 const imgPride = prideAsset.url;
 const imgCarnival = carnivalAsset.url;
@@ -55,7 +55,7 @@ import medicalAsset from "@/assets/medical.jpg.asset.json";
 import stewardAsset from "@/assets/steward.jpg.asset.json";
 import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
 import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
-import codaLogoAsset from "@/assets/coda-logo.jpg.asset.json";
+import codaLogoAsset from "@/assets/coda-pharmacy.svg.asset.json";
 
 
 
@@ -259,7 +259,7 @@ const gallery = [
   { src: imgCarnival, alt: "Eastbourne Carnival parade with colourful feathered costumes", label: "Eastbourne Carnival", href: "https://www.eastbournecarnival.com/" },
   { src: imgCultural, alt: "Hot Rod Rumble classic car and hot rod show", label: "Hot Rod Rumble", href: "https://www.hotrodrumble.co.uk/" },
   { src: imgPride, alt: "Performers at Eastbourne Pride in vibrant costumes", label: "Eastbourne Pride", href: "https://www.eastbourne-pride.com/" },
-  { src: imgIndoor, alt: "Indoor live music event with stage lighting", label: "Indoor Music Event" },
+  { src: imgHastings, alt: "Hastings Pirate Festival logo", label: "Hastings Pirate Festival", href: "https://hastingspirateday.org/" },
   { src: imgCastle, alt: "Medieval Heritage Festival re-enactment", label: "Medieval Heritage Festival", href: "https://herstmonceux-castle.com/" },
 ];
 
@@ -710,6 +710,16 @@ function Index() {
                     </h3>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.
+                    </p>
+                    <p className="mt-3">
+                      <a
+                        href="https://codapharmacy.co.uk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                      >
+                        Visit codapharmacy.co.uk →
+                      </a>
                     </p>
                   </div>
                 </div>
