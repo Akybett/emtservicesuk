@@ -659,70 +659,61 @@ function Index() {
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
                 Friends We Work With
               </h2>
-              <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-2">
-                <div className="flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start">
-                  <a
-                    href="https://www.onlineticketseller.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0"
-                    aria-label="Visit Online Ticket Seller"
+              <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-2">
+                {[
+                  {
+                    href: "https://www.onlineticketseller.com",
+                    label: "Online Ticket Seller",
+                    logo: onlineTicketSellerAsset.url,
+                    linkText: "Visit onlineticketseller.com →",
+                    copy: "We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.",
+                  },
+                  {
+                    href: "https://codapharmacy.co.uk/",
+                    label: "Coda Pharmacy",
+                    logo: codaLogoAsset.url,
+                    linkText: "Visit codapharmacy.co.uk →",
+                    copy: "We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.",
+                  },
+                ].map((f) => (
+                  <article
+                    key={f.label}
+                    className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm"
                   >
-                    <img
-                      src={onlineTicketSellerAsset.url}
-                      alt="Online Ticket Seller logo"
-                      loading="lazy"
-                      className="h-20 w-auto"
-                    />
-                  </a>
-                  <div className="text-center sm:text-left">
-                    <h3 className="text-lg font-semibold text-navy">
-                      Online Ticket Seller
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                      We have worked alongside Christos and the team at Online Ticket Seller for many years and recommend them gladly. They take a fresh, straightforward approach to buying and selling tickets online for events and experiences of all sizes.
-                    </p>
-                    <p className="mt-4">
+                    <div className="flex h-24 w-full items-center justify-center">
                       <a
-                        href="https://www.onlineticketseller.com"
+                        href={f.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Visit ${f.label}`}
+                        className="flex h-full items-center justify-center"
+                      >
+                        <img
+                          src={f.logo}
+                          alt={`${f.label} logo`}
+                          loading="lazy"
+                          className="max-h-20 w-auto object-contain"
+                        />
+                      </a>
+                    </div>
+                    <h3 className="mt-6 text-center text-lg font-semibold text-navy">
+                      {f.label}
+                    </h3>
+                    <p className="mt-3 text-center text-sm leading-relaxed text-muted-foreground">
+                      {f.copy}
+                    </p>
+                    <p className="mt-5 text-center">
+                      <a
+                        href={f.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
                       >
-                        Visit onlineticketseller.com →
+                        {f.linkText}
                       </a>
                     </p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-7 shadow-sm sm:flex-row sm:items-start">
-                  <div className="shrink-0">
-                    <img
-                      src={codaLogoAsset.url}
-                      alt="Coda Pharmacy logo"
-                      loading="lazy"
-                      className="h-20 w-auto"
-                    />
-                  </div>
-                  <div className="text-center sm:text-left">
-                    <h3 className="text-lg font-semibold text-navy">
-                      Coda Pharmacy
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                      We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.
-                    </p>
-                    <p className="mt-3">
-                      <a
-                        href="https://codapharmacy.co.uk/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
-                      >
-                        Visit codapharmacy.co.uk →
-                      </a>
-                    </p>
-                  </div>
-                </div>
+                  </article>
+                ))}
               </div>
             </div>
 
