@@ -72,6 +72,18 @@ function GuidePage() {
           catch people out.
         </p>
 
+        <aside className="mt-8 rounded-2xl border border-navy/10 bg-navy/5 p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-navy">
+            In a nutshell
+          </p>
+          <ul className="mt-3 space-y-2 text-base text-foreground">
+            <li>• Cover is shaped by <strong>peak crowd, activity and environment</strong> — not ticket totals.</li>
+            <li>• <strong>Medical, security and stewarding are separate functions</strong> — no dual roles on the day.</li>
+            <li>• There is rarely a fixed number — your <strong>risk assessment, EMP and SAG</strong> lead the way.</li>
+            <li>• A good provider will <strong>show their working</strong> before they quote.</li>
+          </ul>
+        </aside>
+
         <div className="mt-10 space-y-10 text-base leading-relaxed text-muted-foreground">
           <section>
             <h2 className="text-xl font-semibold text-navy">Start with the bigger picture</h2>
