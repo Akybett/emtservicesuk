@@ -72,6 +72,18 @@ function GuidePage() {
           catch people out.
         </p>
 
+        <aside className="mt-8 rounded-2xl border border-navy/10 bg-navy/5 p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-navy">
+            In a nutshell
+          </p>
+          <ul className="mt-3 space-y-2 text-base text-foreground">
+            <li>• Cover is shaped by <strong>peak crowd, activity and environment</strong> — not ticket totals.</li>
+            <li>• <strong>Medical, security and stewarding are separate functions</strong> — no dual roles on the day.</li>
+            <li>• There is rarely a fixed number — your <strong>risk assessment, EMP and SAG</strong> lead the way.</li>
+            <li>• A good provider will <strong>show their working</strong> before they quote.</li>
+          </ul>
+        </aside>
+
         <div className="mt-10 space-y-10 text-base leading-relaxed text-muted-foreground">
           <section>
             <h2 className="text-xl font-semibold text-navy">Start with the bigger picture</h2>
@@ -165,13 +177,18 @@ function GuidePage() {
             <h2 className="text-xl font-semibold text-navy">A few legal and guidance baselines</h2>
             <p className="mt-3">
               Organisers often ask "what is the minimum cover we need for a festival?" The honest
-              answer is: there is rarely a fixed statutory number. What the licensing authority and
-              Safety Advisory Group (where there is one) expect is that your provision matches your
-              risk assessment and your Event Management Plan (EMP). Not every event has a SAG, so
-              your EMP needs to be thorough — we have seen events with EMPs ranging from a few dozen
-              pages to nearly a hundred, depending on the size and complexity of the event. This is
-              a guide to start the conversation, not a science. Exact numbers always come from your
-              specific risk assessment, EMP and any SAG or licensing officer involved.
+              answer is: there is rarely a fixed statutory number.
+            </p>
+            <p className="mt-3">
+              What the licensing authority and Safety Advisory Group (where there is one) expect
+              is that your provision matches your risk assessment and your Event Management Plan
+              (EMP). Not every event has a SAG, so your EMP needs to be thorough — we have seen
+              EMPs ranging from a few dozen pages to nearly a hundred, depending on the size and
+              complexity of the event.
+            </p>
+            <p className="mt-3">
+              This is a guide to start the conversation, not a science. Exact numbers always come
+              from your specific risk assessment, EMP and any SAG or licensing officer involved.
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-5">
               <li>

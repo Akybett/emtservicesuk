@@ -293,7 +293,7 @@ const faqs = [
   },
   {
     q: "How are you different from St John Ambulance or other voluntary providers?",
-    a: "We are a different model, not a better one. Voluntary providers like St John Ambulance and British Red Cross do excellent work and the charity sector is a huge part of UK event safety. The main difference is simply that our staff are paid and do this as their job — they turn up under a commercial contract with defined hours, defined scope, and clear accountability to the organiser. We have sponsored or supported community events in the past where it made sense, and we are always open to a conversation, but it is not something we can do regularly — we have staff wages, vehicles, equipment and insurance to cover. Some events suit a voluntary deployment; others need a contracted professional team. We just happen to be the second kind.",
+    a: "We are a different model, not a better one. Voluntary providers like St John Ambulance and British Red Cross do excellent work, and the charity sector is a huge part of UK event safety.\n\nThe main difference is simply that our staff are paid and do this as their job. They turn up under a commercial contract with defined hours, defined scope, and clear accountability to the organiser.\n\nWe have sponsored or supported community events in the past where it made sense, and we are always open to a conversation — but it is not something we can do regularly. We have staff wages, vehicles, equipment and insurance to cover.\n\nSome events suit a voluntary deployment; others need a contracted professional team. We just happen to be the second kind.",
   },
   {
     q: "What level of medical cover do you provide?",
@@ -321,7 +321,7 @@ const faqs = [
   },
   {
     q: "How are bookings confirmed, and what about bad weather or cancellation?",
-    a: "Deposits, refunds and extras are handled on a case-by-case, client-by-client basis rather than as a blanket policy — we would rather have a straightforward conversation than hide behind small print. As a general guide: a deposit secures the date, and the balance is usually settled in advance of the event (especially for larger teams, where we need the funds upfront to cover staffing). If we have already committed staff to site and the event is then cancelled — including for force majeure reasons such as weather — our team is already contracted and has to be paid, so unfortunately that cost has to be passed on. Talk to us early if circumstances change and we will work through it with you fairly.",
+    a: "Deposits, refunds and extras are handled on a case-by-case, client-by-client basis rather than as a blanket policy. We would rather have a straightforward conversation than hide behind small print.\n\nAs a general guide: a deposit secures the date, and the balance is usually settled in advance of the event — especially for larger teams, where we need the funds upfront to cover staffing.\n\nIf we have already committed staff to site and the event is then cancelled — including for force majeure reasons such as weather — our team is already contracted and has to be paid, so that cost has to be passed on.\n\nTalk to us early if circumstances change and we will work through it with you fairly.",
   },
   {
     q: "Do you cover small or bespoke private events?",
@@ -972,7 +972,11 @@ function Index() {
                   {f.q}
                 </AccordionTrigger>
                 <AccordionContent className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">
-                  {f.a}
+                  <div className="space-y-3">
+                    {f.a.split("\n\n").map((p, idx) => (
+                      <p key={idx}>{p}</p>
+                    ))}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}
@@ -1030,6 +1034,25 @@ function Index() {
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   We cover events across the wider UK on request. Get in touch and we will let you know whether we are the right fit for your location and dates.
+                </p>
+              </div>
+              <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+                  What to include in your enquiry
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  A few quick details help us give you a useful reply first time:
+                </p>
+                <ul className="mt-3 space-y-1.5 text-sm text-foreground">
+                  <li>• Event date(s) and location</li>
+                  <li>• Type of event and expected numbers</li>
+                  <li>• Whether alcohol is being served on site</li>
+                  <li>• Any licensable activities (music, performance, fireworks)</li>
+                  <li>• The cover you think you need — medical, security, stewarding, fire safety, or a mix</li>
+                  <li>• Anything already agreed with your local licensing team or SAG</li>
+                </ul>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  Not sure on some of these? Send what you have and we will work it through with you.
                 </p>
               </div>
               <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
