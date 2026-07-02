@@ -972,7 +972,11 @@ function Index() {
                   {f.q}
                 </AccordionTrigger>
                 <AccordionContent className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">
-                  {f.a}
+                  <div className="space-y-3">
+                    {f.a.split("\n\n").map((p, idx) => (
+                      <p key={idx}>{p}</p>
+                    ))}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}
