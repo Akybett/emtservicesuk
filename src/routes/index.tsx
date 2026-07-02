@@ -1034,6 +1034,25 @@ function Index() {
               </div>
               <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+                  What to include in your enquiry
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  A few quick details help us give you a useful reply first time:
+                </p>
+                <ul className="mt-3 space-y-1.5 text-sm text-foreground">
+                  <li>• Event date(s) and location</li>
+                  <li>• Type of event and expected numbers</li>
+                  <li>• Whether alcohol is being served on site</li>
+                  <li>• Any licensable activities (music, performance, fireworks)</li>
+                  <li>• The cover you think you need — medical, security, stewarding, fire safety, or a mix</li>
+                  <li>• Anything already agreed with your local licensing team or SAG</li>
+                </ul>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  Not sure on some of these? Send what you have and we will work it through with you.
+                </p>
+              </div>
+              <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
                   Follow us on socials
                 </p>
                 <div className="mt-3 flex items-center gap-2">
