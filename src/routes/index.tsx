@@ -686,13 +686,15 @@ function Index() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Visit ${f.label}`}
-                        className="flex h-full items-center justify-center"
+                        className="flex h-full w-full items-center justify-center"
                       >
                         <img
                           src={f.logo}
                           alt={`${f.label} logo`}
                           loading="lazy"
-                          className="max-h-20 w-auto object-contain"
+                          width={320}
+                          height={80}
+                          className="h-auto max-h-20 w-auto max-w-[80%] object-contain"
                         />
                       </a>
                     </div>
