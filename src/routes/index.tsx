@@ -293,7 +293,7 @@ const faqs = [
   },
   {
     q: "How are you different from St John Ambulance or other voluntary providers?",
-    a: "We are a different model, not a better one. Voluntary providers like St John Ambulance and British Red Cross do excellent work and the charity sector is a huge part of UK event safety. The main difference is simply that our staff are paid and do this as their job — they turn up under a commercial contract with defined hours, defined scope, and clear accountability to the organiser. We have sponsored or supported community events in the past where it made sense, and we are always open to a conversation, but it is not something we can do regularly — we have staff wages, vehicles, equipment and insurance to cover. Some events suit a voluntary deployment; others need a contracted professional team. We just happen to be the second kind.",
+    a: "We are a different model, not a better one. Voluntary providers like St John Ambulance and British Red Cross do excellent work, and the charity sector is a huge part of UK event safety.\n\nThe main difference is simply that our staff are paid and do this as their job. They turn up under a commercial contract with defined hours, defined scope, and clear accountability to the organiser.\n\nWe have sponsored or supported community events in the past where it made sense, and we are always open to a conversation — but it is not something we can do regularly. We have staff wages, vehicles, equipment and insurance to cover.\n\nSome events suit a voluntary deployment; others need a contracted professional team. We just happen to be the second kind.",
   },
   {
     q: "What level of medical cover do you provide?",
