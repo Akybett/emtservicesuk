@@ -344,6 +344,7 @@ function Logo({ light = false, className = "" }: { light?: boolean; className?: 
 
 function Index() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [showFull, setShowFull] = useState(false);
   const googleData = googleReviewsData as {
     rating: number | null;
     total: number | null;
@@ -373,6 +374,13 @@ function Index() {
 
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
+      {/* Mobile-only condensed view (hidden once user opts into full site) */}
+      <div className={showFull ? "hidden" : "md:hidden"}>
+        <MobileHome onShowFull={() => setShowFull(true)} />
+      </div>
+
+      {/* Full site — always shown on tablet+; on mobile only if user opts in */}
+      <div className={showFull ? "block" : "hidden md:block"}>
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-navy-deep/85 text-white backdrop-blur">
         <div className="mx-auto flex h-28 w-full max-w-7xl items-center justify-between px-5 lg:px-8 sm:h-32">
