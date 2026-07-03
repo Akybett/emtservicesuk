@@ -1166,6 +1166,145 @@ function Index() {
           </div>
         </div>
       </footer>
+      </div>
+    </div>
+  );
+}
+
+function MobileHome({ onShowFull }: { onShowFull: () => void }) {
+  const bullets = [
+    { icon: Shield, title: "SIA-Licensed Security", copy: "Personally vetted operatives with genuine operational background." },
+    { icon: HeartPulse, title: "Medical & First Aid", copy: "On-site medical planning and first aid cover for events of all sizes." },
+    { icon: Users, title: "Professional Stewarding", copy: "Specialist stewards matched to your event, not sourced from an agency pool." },
+    { icon: Flame, title: "Fire Safety", copy: "NEBOSH-led fire safety planning and on-site compliance." },
+  ];
+  const friends = [
+    { href: "https://www.onlineticketseller.com", label: "Online Ticket Seller", logo: onlineTicketSellerAsset.url },
+    { href: "https://codapharmacy.co.uk/", label: "Coda Pharmacy", logo: codaLogoAsset.url },
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Compact header */}
+      <header className="sticky top-0 z-40 flex items-center justify-between border-b border-white/10 bg-navy-deep px-5 py-4 text-white">
+        <img
+          src={logoFull}
+          alt="EMT Services"
+          className="h-10 w-auto"
+          style={{ filter: "brightness(0) invert(1)" }}
+        />
+        <a
+          href="#mobile-contact"
+          className="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/20"
+        >
+          Contact
+        </a>
+      </header>
+
+      {/* Hero */}
+      <section className="bg-navy-deep px-5 pb-10 pt-6 text-white">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">
+          UK Event Safety
+        </p>
+        <h1 className="mt-3 text-3xl font-bold leading-tight">
+          Medical, security, stewarding &amp; fire safety for UK events.
+        </h1>
+        <p className="mt-4 text-base leading-relaxed text-white/80">
+          Independent, owner-operated, with 35+ years combined experience. Based in the
+          South East, working nationally.
+        </p>
+        <a
+          href="#mobile-contact"
+          className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-3 text-base font-semibold text-navy-deep shadow-sm"
+        >
+          Request Cover
+        </a>
+      </section>
+
+      {/* What we do */}
+      <section className="px-5 py-10">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          What we do
+        </h2>
+        <ul className="mt-5 space-y-4">
+          {bullets.map(({ icon: Icon, title, copy }) => (
+            <li key={title} className="flex gap-4 rounded-2xl border border-border bg-card p-4 shadow-sm">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-navy text-white">
+                <Icon size={20} aria-hidden="true" />
+              </div>
+              <div className="min-w-0">
+                <p className="font-semibold text-navy">{title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{copy}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Friends we work with */}
+      <section className="bg-secondary/40 px-5 py-10">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          Friends we work with
+        </h2>
+        <div className="mt-5 grid grid-cols-2 gap-3">
+          {friends.map((f) => (
+            <a
+              key={f.label}
+              href={f.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-24 items-center justify-center rounded-2xl border border-border bg-card p-4 shadow-sm"
+              aria-label={`Visit ${f.label}`}
+            >
+              <img
+                src={f.logo}
+                alt={`${f.label} logo`}
+                loading="lazy"
+                width={200}
+                height={60}
+                className="h-auto max-h-14 w-auto max-w-[90%] object-contain"
+              />
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="mobile-contact" className="px-5 py-10">
+        <h2 className="text-2xl font-bold text-navy">Get in touch</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Tell us about your event and one of the directors will be in touch.
+        </p>
+        <div className="mt-6">
+          <ContactForm />
+        </div>
+        <p className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
+          <Mail size={16} aria-hidden="true" />
+          <a href="mailto:info@emtservices.uk" className="font-medium text-navy underline underline-offset-2">
+            info@emtservices.uk
+          </a>
+        </p>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-border bg-navy-deep px-5 py-8 text-white">
+        <button
+          type="button"
+          onClick={onShowFull}
+          className="w-full rounded-full border border-white/40 bg-transparent px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-navy"
+        >
+          View full site →
+        </button>
+        <p className="mt-6 text-center text-xs text-white/60">
+          © {new Date().getFullYear()} EMT Services. Independent UK event safety company.
+        </p>
+        <ul className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-white/70">
+          <li><Link to="/privacy" className="hover:text-white">Privacy</Link></li>
+          <li><Link to="/terms" className="hover:text-white">Terms</Link></li>
+          <li><Link to="/cookies" className="hover:text-white">Cookies</Link></li>
+          <li><Link to="/accessibility" className="hover:text-white">Accessibility</Link></li>
+        </ul>
+      </footer>
     </div>
   );
 }
