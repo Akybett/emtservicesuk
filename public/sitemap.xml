@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://emtservices.uk/</loc>
+    <loc>https://emtservicesuk.lovable.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://emtservices.uk/guides</loc>
+    <loc>https://emtservicesuk.lovable.app/guides</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://emtservices.uk/guides/event-medical-cover-requirements</loc>
+    <loc>https://emtservicesuk.lovable.app/guides/event-medical-cover-requirements</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://emtservices.uk/privacy</loc>
+    <loc>https://emtservicesuk.lovable.app/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://emtservices.uk/terms</loc>
+    <loc>https://emtservicesuk.lovable.app/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://emtservices.uk/cookies</loc>
+    <loc>https://emtservicesuk.lovable.app/cookies</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://emtservices.uk/accessibility</loc>
+    <loc>https://emtservicesuk.lovable.app/accessibility</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
