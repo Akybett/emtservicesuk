@@ -1277,10 +1277,19 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
 
       {/* Footer */}
       <footer className="border-t border-border bg-navy-deep px-5 py-8 text-white">
+        <a
+          href={GOOGLE_REVIEW_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-navy-deep shadow-sm"
+        >
+          <Star size={16} aria-hidden="true" />
+          Leave us a Google Review
+        </a>
         <button
           type="button"
           onClick={onShowFull}
-          className="w-full rounded-full border border-white/40 bg-transparent px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-navy"
+          className="mt-3 w-full rounded-full border border-white/40 bg-transparent px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-navy"
         >
           View full site →
         </button>
