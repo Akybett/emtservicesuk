@@ -36,33 +36,22 @@ import {
 } from "@/components/ui/accordion";
 
 import heroBg from "@/assets/hero-bg.jpg";
-import castleAsset from "@/assets/medieval-heritage-festival.jpg.asset.json";
-import festivalAsset from "@/assets/hot-rod-rumble.png.asset.json";
-import hastingsAsset from "@/assets/hastings-pirate-festival.png.asset.json";
-import camperAsset from "@/assets/camper-marmalade.jpg.asset.json";
-import prideAsset from "@/assets/eastbourne-pride.jpg.asset.json";
-import carnivalAsset from "@/assets/eastbourne-carnival.jpg.asset.json";
-const imgCastle = castleAsset.url;
-const imgCultural = festivalAsset.url;
-const imgHastings = hastingsAsset.url;
-const imgCamper = camperAsset.url;
-const imgPride = prideAsset.url;
-const imgCarnival = carnivalAsset.url;
 import logoFull from "@/assets/logo-full.png";
 import logoIcon from "@/assets/logo-icon.png";
-import securityAsset from "@/assets/security.jpg.asset.json";
-import medicalAsset from "@/assets/medical.jpg.asset.json";
-import stewardAsset from "@/assets/steward.jpg.asset.json";
-import firemarshalAsset from "@/assets/firemarshal.jpg.asset.json";
-import onlineTicketSellerAsset from "@/assets/online-ticket-seller.png.asset.json";
-import codaLogoAsset from "@/assets/coda-pharmacy.svg.asset.json";
 
+const imgCastle = "/medieval-heritage-festival.jpg";
+const imgCultural = "/hot-rod-rumble.png";
+const imgHastings = "/hastings-pirate-festival.png";
+const imgCamper = "/camper-marmalade.jpg";
+const imgPride = "/eastbourne-pride.jpg";
+const imgCarnival = "/eastbourne-carnival.jpg";
+const imgSecurity = "/security.jpg";
+const imgMedical = "/medical.jpg";
+const imgStewards = "/steward.jpg";
+const imgFire = "/firemarshal.jpg";
+const onlineTicketSellerAsset = { url: "/online-ticket-seller.png" };
+const codaLogoAsset = { url: "/coda-pharmacy.svg" };
 
-
-const imgSecurity = securityAsset.url;
-const imgMedical = medicalAsset.url;
-const imgStewards = stewardAsset.url;
-const imgFire = firemarshalAsset.url;
 
 
 const TITLE = "EMT Services | Professional Medical & Security Event Support";
