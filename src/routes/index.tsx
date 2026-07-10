@@ -337,12 +337,32 @@ function Logo({ light = false, className = "" }: { light?: boolean; className?: 
 function Index() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [showFull, setShowFull] = useState(false);
-  const googleData = googleReviewsData as {
-    rating: number | null;
-    total: number | null;
-    reviews: GoogleReview[];
-  };
+  const [googleData, setGoogleData] = useState(
+    googleReviewsData as {
+      rating: number | null;
+      total: number | null;
+      reviews: GoogleReview[];
+    },
+  );
+  const fetchReviews = useServerFn(getGoogleReviews);
+  useEffect(() => {
+    let cancelled = false;
+    fetchReviews()
+      .then((data) => {
+        if (cancelled || !data || data.error) return;
+        setGoogleData({
+          rating: data.rating,
+          total: data.total,
+          reviews: data.reviews as GoogleReview[],
+        });
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [fetchReviews]);
   const liveReviews: GoogleReview[] = googleData.reviews ?? [];
+
   const displayReviews =
     liveReviews.length > 0
       ? liveReviews.slice(0, 4).map((r) => ({
