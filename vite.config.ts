@@ -8,8 +8,5 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
-    sitemap: {
-      host: "https://www.emtservices.uk",
-    },
   },
 });
