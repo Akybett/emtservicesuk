@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emtservicesuk.lovable.app/sitemap.xml
+Sitemap: https://www.emtservices.uk/sitemap.xml

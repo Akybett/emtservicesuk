@@ -5,11 +5,11 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Use Lovable's default Nitro preset (Cloudflare) so the published Lovable
-// site renders correctly. If deploying to Netlify/Vercel elsewhere, override
-// the preset in that environment's build config — not here.
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
+    sitemap: {
+      host: "https://www.emtservices.uk",
+    },
   },
 });
