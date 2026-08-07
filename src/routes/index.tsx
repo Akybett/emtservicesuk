@@ -1232,7 +1232,7 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
           Request Cover
         </a>
         <img
-          src={logoIcon}
+          src="/logo-icon-white.png"
           alt="EMT Services logo"
           width={512}
           height={512}
