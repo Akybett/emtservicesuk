@@ -463,10 +463,9 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/70 via-navy-deep/85 to-navy-deep" />
         <div className="relative mx-auto flex max-w-4xl flex-col items-center px-5 py-24 text-center lg:py-36 lg:px-8">
           <img
-            src={logoIcon}
-            alt="EM Services"
+            src="/logo-icon-white.png"
+            alt="EMT Services logo"
             className="h-48 w-auto sm:h-60"
-            style={{ filter: "brightness(0) invert(1)" }}
           />
 
           <h1 className="mx-auto mt-10 max-w-3xl text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
