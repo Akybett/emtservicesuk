@@ -1232,11 +1232,11 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
           Request Cover
         </a>
         <img
-          src="/medical.jpg"
-          alt="EMT Services medical staff providing event first aid cover"
-          width={800}
-          height={600}
-          className="mt-6 h-56 w-full rounded-2xl object-cover shadow-lg"
+          src={logoIcon}
+          alt="EMT Services logo"
+          width={512}
+          height={512}
+          className="mx-auto mt-8 h-40 w-40 object-contain"
         />
       </section>
 
@@ -1247,10 +1247,11 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
         </h2>
         <div className="mt-5 grid grid-cols-2 gap-3">
           {[
-            { src: "/security.jpg", alt: "SIA-licensed security operative on duty at a UK event" },
-            { src: "/steward.jpg", alt: "Event steward assisting visitors at a festival" },
-            { src: "/firemarshal.jpg", alt: "Fire marshal carrying out on-site safety checks" },
-            { src: "/eastbourne-carnival.jpg", alt: "EMT Services team covering Eastbourne Carnival" },
+            { src: imgMedical, alt: "EMT Services medical staff providing event first aid cover" },
+            { src: imgSecurity, alt: "SIA-licensed security operative on duty at a UK event" },
+            { src: imgStewards, alt: "Event steward assisting visitors at a festival" },
+            { src: imgFire, alt: "Fire marshal carrying out on-site safety checks" },
+
           ].map((img) => (
             <img
               key={img.src}
