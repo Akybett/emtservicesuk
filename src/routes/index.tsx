@@ -40,7 +40,6 @@ import {
 
 import heroBg from "@/assets/hero-bg.jpg";
 import logoFull from "@/assets/logo-full.png";
-import logoIcon from "@/assets/logo-icon.png";
 
 const imgCastle = "/medieval-heritage-festival.jpg";
 const imgCultural = "/hot-rod-rumble.png";
