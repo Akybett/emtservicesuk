@@ -1231,7 +1231,40 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
         >
           Request Cover
         </a>
+        <img
+          src="/medical.jpg"
+          alt="EMT Services medical staff providing event first aid cover"
+          width={800}
+          height={600}
+          className="mt-6 h-56 w-full rounded-2xl object-cover shadow-lg"
+        />
       </section>
+
+      {/* Our team in action */}
+      <section className="px-5 pt-10">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          Our team on site
+        </h2>
+        <div className="mt-5 grid grid-cols-2 gap-3">
+          {[
+            { src: "/security.jpg", alt: "SIA-licensed security operative on duty at a UK event" },
+            { src: "/steward.jpg", alt: "Event steward assisting visitors at a festival" },
+            { src: "/firemarshal.jpg", alt: "Fire marshal carrying out on-site safety checks" },
+            { src: "/eastbourne-carnival.jpg", alt: "EMT Services team covering Eastbourne Carnival" },
+          ].map((img) => (
+            <img
+              key={img.src}
+              src={img.src}
+              alt={img.alt}
+              loading="lazy"
+              width={400}
+              height={400}
+              className="h-32 w-full rounded-2xl object-cover shadow-sm"
+            />
+          ))}
+        </div>
+      </section>
+
 
       {/* What we do */}
       <section className="px-5 py-10">
