@@ -1,42 +1,42 @@
 {
   "rating": 5,
-  "total": 7,
+  "total": 8,
   "reviews": [
+    {
+      "author_name": "Henry Reyes",
+      "rating": 5,
+      "text": "",
+      "relative_time_description": "a month ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTs-wGZEH66kxzlLFbmwVi_YmmgM-Pc-zQfQCINKm6AeA-dy8=s128-c0x00000000-cc-rp-mo"
+    },
     {
       "author_name": "Christos Stylianou",
       "rating": 5,
       "text": "We have had the pleasure of working alongside EMT Services at a number of events, and they are always a pleasure to work with.\n\nTheir team is professional, reliable and approachable, providing both security and medical cover to a consistently high standard. They work seamlessly with event organisers and other suppliers, helping events run safely and efficiently while remaining calm and helpful throughout.\n\nIt is reassuring to know that EMT Services are on site, and we would have no hesitation in recommending them to anyone looking for a dependable and professional event services provider.",
-      "relative_time_description": "in the last week",
+      "relative_time_description": "a month ago",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKnPt0pxtw7GNxXrQ9X1SSApoDoLGbBv2S5x5CGs-30GPrhM9Q=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author_name": "Miya Lovely",
       "rating": 5,
       "text": "Very professional and quick response to any issues that arrived highly recommended",
-      "relative_time_description": "3 weeks ago",
+      "relative_time_description": "2 months ago",
       "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoVZAngtxEXC4FNAILizRpm2YWlNwVFNpeYfxML-GTz_HIVC9J=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author_name": "Niki Y",
       "rating": 5,
       "text": "Excellent service! Contacted about help with an event and the team were so professional, thouroughly discussed our options and did exactly what was needed. Fantastic!",
-      "relative_time_description": "4 weeks ago",
+      "relative_time_description": "2 months ago",
       "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU6N9XLDl0fG2whq0EkonGIMPMR0PfB_buSctynqoJiFI7HsJm8oA=s128-c0x00000000-cc-rp-mo-ba4"
     },
     {
       "author_name": "The wandering wizard",
       "rating": 5,
       "text": "Had the absolute pleasure of working alongside Andy and his team at inter the wild festival.  Absolute legend,  knowledgeable,  professional and a joy to work alongside.\nLook forward to working with Emt anytime\nBob the wizard\n💜🧙🧙‍♂️⚡️",
-      "relative_time_description": "9 months ago",
+      "relative_time_description": "11 months ago",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK9Ww4Ar0ijTaGIfsWVkqXJr0OXiSDVH3OLk-xn5MAcI70Plg=s128-c0x00000000-cc-rp-mo-ba4"
-    },
-    {
-      "author_name": "Mel Martin",
-      "rating": 5,
-      "text": "Alan arrived in good time he was a likeable man.Luckily only 2 plasters  were needed during the event. EMT were our first choice for medical cover this year and we will certainly be booking them for future events.",
-      "relative_time_description": "9 months ago",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-VKxMFZvybGIITpZjMsJ80PS6DoAenvhdKlNsoahOGIndGUe9Gg=s128-c0x00000000-cc-rp-mo-ba6"
     }
   ],
-  "fetchedAt": "2026-07-10T06:47:18.255Z"
+  "fetchedAt": "2026-09-06T14:27:31.685Z"
 }
