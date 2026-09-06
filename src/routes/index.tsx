@@ -371,7 +371,7 @@ function Index() {
     let tries = 0;
     const tick = () => {
       const el = document.getElementById(hash);
-      if (el) {
+      if (el && el.getClientRects().length > 0) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
         return;
       }
