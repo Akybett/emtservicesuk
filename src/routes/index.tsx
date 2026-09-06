@@ -371,7 +371,7 @@ function Index() {
     let tries = 0;
     const tick = () => {
       const el = document.getElementById(hash);
-      if (el) {
+      if (el && el.getClientRects().length > 0) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
         return;
       }
@@ -1118,7 +1118,7 @@ function Index() {
               </div>
             </div>
 
-            <ContactForm />
+            <ContactForm idPrefix="desktop" />
           </div>
         </div>
       </section>
@@ -1339,7 +1339,7 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
           Tell us about your event and one of the directors will be in touch.
         </p>
         <div className="mt-6">
-          <ContactForm />
+          <ContactForm idPrefix="mobile" />
         </div>
         <p className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
           <Mail size={16} aria-hidden="true" />
@@ -1418,7 +1418,7 @@ function SectionHeading({
 
 const WEB3FORMS_KEY = "22160d78-fa02-41fa-bdee-389912551032";
 
-function ContactForm() {
+function ContactForm({ idPrefix }: { idPrefix: string }) {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -1496,20 +1496,20 @@ function ContactForm() {
 
       <fieldset disabled={status === "sending"} className="contents">
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field id="name" label="Full Name" required />
-          <Field id="email" label="Email Address" type="email" required />
-          <Field id="phone" label="Phone (optional)" type="tel" />
-          <Field id="org" label="Organisation / Event Name (optional)" />
-          <Field id="date" label="Event Date" type="date" />
-          <Field id="location" label="Event Location" />
-          <Field id="attendance" label="Expected Attendance (optional)" />
-          <Field id="services" label="Services Required" />
+          <Field id={`${idPrefix}-name`} name="name" label="Full Name" required />
+          <Field id={`${idPrefix}-email`} name="email" label="Email Address" type="email" required />
+          <Field id={`${idPrefix}-phone`} name="phone" label="Phone (optional)" type="tel" />
+          <Field id={`${idPrefix}-org`} name="org" label="Organisation / Event Name (optional)" />
+          <Field id={`${idPrefix}-date`} name="date" label="Event Date" type="date" />
+          <Field id={`${idPrefix}-location`} name="location" label="Event Location" />
+          <Field id={`${idPrefix}-attendance`} name="attendance" label="Expected Attendance (optional)" />
+          <Field id={`${idPrefix}-services-required`} name="services" label="Services Required" />
           <div className="sm:col-span-2">
-            <Label htmlFor="contact-pref" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            <Label htmlFor={`${idPrefix}-contact-pref`} className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Preferred Contact Method & Times (optional)
             </Label>
             <Textarea
-              id="contact-pref"
+              id={`${idPrefix}-contact-pref`}
               name="contact-pref"
               rows={4}
               className="mt-2"
@@ -1544,11 +1544,13 @@ function ContactForm() {
 
 function Field({
   id,
+  name,
   label,
   type = "text",
   required,
 }: {
   id: string;
+  name: string;
   label: string;
   type?: string;
   required?: boolean;
@@ -1562,7 +1564,7 @@ function Field({
         {label}
         {required && <span className="ml-1 text-destructive">*</span>}
       </Label>
-      <Input id={id} name={id} type={type} required={required} className="mt-2" />
+      <Input id={id} name={name} type={type} required={required} className="mt-2" />
     </div>
   );
 }
