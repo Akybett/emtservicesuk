@@ -361,6 +361,25 @@ function Index() {
     };
   }, [fetchReviews]);
   const liveReviews: GoogleReview[] = googleData.reviews ?? [];
+  // Handle deep links like /#services — on mobile the condensed view has no
+  // such sections, so opt into the full site first, then scroll to the target.
+  useEffect(() => {
+    const hash = window.location.hash?.slice(1);
+    if (!hash || hash === "top") return;
+    const isCondensed = window.matchMedia("(max-width: 767px)").matches;
+    if (isCondensed && !hash.startsWith("mobile-")) setShowFull(true);
+    let tries = 0;
+    const tick = () => {
+      const el = document.getElementById(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      if (tries++ < 20) window.setTimeout(tick, 100);
+    };
+    window.setTimeout(tick, 50);
+  }, []);
+
 
   const displayReviews =
     liveReviews.length > 0
