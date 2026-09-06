@@ -32,7 +32,10 @@ async function main() {
         payload = {
           rating: json.result.rating ?? null,
           total: json.result.user_ratings_total ?? null,
-          reviews: (json.result.reviews ?? []).slice(0, 6).map((r) => ({
+          reviews: (json.result.reviews ?? [])
+            .filter((r) => (r.text ?? "").trim().split(/\s+/).filter(Boolean).length >= 5)
+            .slice(0, 6)
+            .map((r) => ({
             author_name: r.author_name,
             rating: r.rating,
             text: r.text,
