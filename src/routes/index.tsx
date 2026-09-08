@@ -1419,7 +1419,7 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
           View full site →
         </button>
         <p className="mt-6 text-center text-xs text-white/60">
-          © {new Date().getFullYear()} EMT Services. Independent UK event safety company.
+          © {new Date().getFullYear()} EMT Services. Independent private event medical, security and safety services across the UK.
         </p>
         <ul className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-white/70">
           <li><Link to="/privacy" className="hover:text-white">Privacy</Link></li>
