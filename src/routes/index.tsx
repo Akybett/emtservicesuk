@@ -758,7 +758,7 @@ function Index() {
             {/* Our network of partners & allies */}
             <div className="mt-16 rounded-3xl bg-muted/60 p-8 sm:p-10 lg:p-12">
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-                Our Network of Partners &amp; Allies
+                Our network of partners &amp; allies
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
                 We work alongside trusted companies we know and rate when an event needs
