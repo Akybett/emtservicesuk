@@ -1115,10 +1115,10 @@ function Index() {
               </div>
               <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-                  Areas We Cover
+                  Areas we cover
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground">
-                  Based in the <span className="font-semibold text-navy">South East of England</span> — our home patch for festivals, castle and estate events, and cultural gatherings.
+                  Based in the <span className="font-semibold text-navy">South East of England</span>, our home patch for festivals, castle and estate events, and cultural gatherings.
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   We cover events across the wider UK on request. Get in touch and we will let you know whether we are the right fit for your location and dates.
