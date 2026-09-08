@@ -667,7 +667,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             kicker="Foundations"
-            title="The Foundation of Our Service"
+            title="The foundation of our service"
             subtitle="We are not a large company, and we do not pretend to be. These are the principles the directors of EMT Services have worked to every day across a combined 35+ years in the industry."
           />
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
