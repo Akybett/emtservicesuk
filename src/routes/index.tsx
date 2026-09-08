@@ -144,13 +144,13 @@ const services = [
     icon: Users,
     title: "Professional Stewarding",
     image: imgStewards,
-    copy: "We bring in specialist stewards for each event rather than maintaining a permanent roster. This keeps us flexible and ensures the right personnel are matched to the right event. Our stewards come to us through personal recommendation and are vetted directly — not sourced from an agency pool.",
+    copy: "We bring in specialist stewards for each event rather than maintaining a permanent roster. This keeps us flexible and ensures the right personnel are matched to the right event. Our stewards come to us through personal recommendation and are vetted directly, not sourced from an agency pool.",
   },
   {
     icon: Flame,
-    title: "Fire Safety Operations",
+    title: "Fire Safety",
     image: imgFire,
-    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. Andy holds a NEBOSH certification — a recognised qualification in occupational health, safety and risk management — applied to every event we cover.",
+    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. One of our directors holds a NEBOSH certification — a recognised qualification in occupational health, safety and risk management — applied to every event we cover.",
   },
 ];
 
