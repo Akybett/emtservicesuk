@@ -815,6 +815,7 @@ function Index() {
                   },
                   {
                     label: "Sussex Concepts CIC",
+                    href: "https://sussexconcepts.co.uk/",
                     logo: "/sussex-concepts-logo.webp",
                     copy: "Sussex Concepts CIC is a community interest company and event organiser in its own right, based in St Leonards-on-Sea, East Sussex, focusing on community development and local events. We are pleased to work alongside them and support their community-focused work.",
                   },
@@ -855,7 +856,7 @@ function Index() {
                           rel="noopener noreferrer"
                           className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
                         >
-                          Visit martlet-productions.co.uk →
+                          Visit {new URL(p.href).hostname.replace(/^www\./, "")} →
                         </a>
                       </p>
                     )}
