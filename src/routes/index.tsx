@@ -761,9 +761,8 @@ function Index() {
                 Our Network of Partners &amp; Allies
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
-                Collaboration drives everything we do. When an event calls for more
-                hands or specialist support, we work alongside trusted companies we
-                know and rate — so you get one joined-up, dependable team.
+                We work alongside trusted companies we know and rate when an event needs
+                more hands or specialist support, so you get one joined-up, dependable team.
               </p>
               <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {[
