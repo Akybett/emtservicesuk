@@ -693,7 +693,7 @@ function Index() {
             {/* Friends we work with */}
             <div className="mt-16">
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-                Friends We Work With
+                Friends we work with
               </h2>
               <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-2">
                 {[
