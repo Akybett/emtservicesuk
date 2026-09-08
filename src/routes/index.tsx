@@ -622,8 +622,7 @@ function Index() {
         <div className="mt-24 bg-navy-deep py-16 text-white">
           <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
             <p className="text-base leading-relaxed text-white/80 sm:text-lg">
-              Among the events we have been proud to support are cultural occasions
-              such as the{" "}
+              We have supported events including the{" "}
               <a
                 href="https://www.gofundme.com/f/the-revival-of-eastbourne-lammas-festival"
                 target="_blank"
