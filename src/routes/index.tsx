@@ -757,7 +757,7 @@ function Index() {
             </div>
 
             {/* Our network of partners & allies */}
-            <div className="mt-16">
+            <div className="mt-16 rounded-3xl bg-muted/60 p-8 sm:p-10 lg:p-12">
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
                 Our Network of Partners &amp; Allies
               </h2>
@@ -786,9 +786,9 @@ function Index() {
                 ].map((p) => (
                   <article
                     key={p.label}
-                    className="flex flex-col rounded-2xl border border-border bg-navy-deep p-8 shadow-sm"
+                    className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm"
                   >
-                    <div className="flex h-36 w-full items-center justify-center">
+                    <div className="flex h-36 w-full items-center justify-center bg-white rounded-xl">
                       <img
                         src={p.logo}
                         alt={`${p.label} logo`}
@@ -798,10 +798,10 @@ function Index() {
                         className="h-auto max-h-32 w-auto max-w-[70%] rounded-xl object-contain"
                       />
                     </div>
-                    <h3 className="mt-6 text-center text-lg font-semibold text-white">
+                    <h3 className="mt-6 text-center text-lg font-semibold text-navy">
                       {p.label}
                     </h3>
-                    <p className="mt-3 text-center text-sm leading-relaxed text-white/70">
+                    <p className="mt-3 text-center text-sm leading-relaxed text-muted-foreground">
                       {p.copy}
                     </p>
                   </article>
