@@ -831,8 +831,8 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             kicker="Track record"
-            title="Events We Have Covered"
-            subtitle="A representative cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
+            title="Events we have covered"
+            subtitle="A representative cross-section of the work we do, from small community events to larger gatherings. We do not pick and choose what to show based on scale."
             align="left"
           />
           <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
