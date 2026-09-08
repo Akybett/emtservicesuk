@@ -981,7 +981,7 @@ function Index() {
 
             <aside className="rounded-2xl border border-border bg-card p-7 shadow-sm">
               <h3 className="text-2xl font-semibold tracking-tight text-navy">
-                Follow Us
+                Follow us
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 We share updates, event coverage, and behind-the-scenes content on our
