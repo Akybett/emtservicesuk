@@ -1254,7 +1254,7 @@ function Index() {
 function MobileHome({ onShowFull }: { onShowFull: () => void }) {
   const bullets = [
     { icon: Shield, title: "SIA-Licensed Security", copy: "Personally vetted operatives with genuine operational background." },
-    { icon: HeartPulse, title: "Medical & First Aid", copy: "On-site medical planning and first aid cover for events of all sizes." },
+    { icon: HeartPulse, title: "Medical & First Aid Cover", copy: "On-site medical planning and first aid cover for events of all sizes." },
     { icon: Users, title: "Professional Stewarding", copy: "Specialist stewards matched to your event, not sourced from an agency pool." },
     { icon: Flame, title: "Fire Safety", copy: "NEBOSH-led fire safety planning and on-site compliance." },
   ];
