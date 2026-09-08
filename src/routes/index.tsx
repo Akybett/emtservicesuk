@@ -1084,7 +1084,7 @@ function Index() {
       {/* Contact */}
       <section id="contact" className="bg-background py-24 lg:py-32">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
-          <SectionHeading kicker="Contact" title="Get in Touch" />
+          <SectionHeading kicker="Contact" title="Get in touch" />
           <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_1.3fr]">
             <div>
               <p className="text-sm leading-relaxed text-muted-foreground">
