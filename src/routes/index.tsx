@@ -593,7 +593,7 @@ function Index() {
               Types of events we cover
             </h3>
             <p className="mx-auto mt-4 max-w-3xl text-center text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
-              From intimate gatherings to large-scale events
+              From community gatherings to larger shows
             </p>
             <div className="mx-auto mt-12 grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {eventTypes.map((group) => (
