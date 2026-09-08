@@ -805,18 +805,23 @@ function Index() {
                   </article>
                 ))}
               </div>
-              <div className="mx-auto mt-6 grid max-w-3xl gap-6 sm:grid-cols-2">
+              <div className="mx-auto mt-6 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
                     label: "Martlet Productions",
                     href: "https://martlet-productions.co.uk/",
-                    copy: "Martlet Productions is a creative event production partner we are glad to work alongside. They bring thoughtful production support and technical experience, helping events run smoothly from planning through to the show itself.",
-                    initials: "MP",
+                    logo: "/martlet-logo.png",
+                    copy: "Martlet Productions is a creative partner dedicated to bringing medieval and heritage themes to life through immersive, high-quality events. Driven by a passion for authenticity, creativity and exceptional delivery, they work across event project management, safety, risk assessments and compliance, making them a natural fit for historically grounded events that need to be both engaging and professionally run.",
                   },
                   {
                     label: "Festival Events",
                     copy: "Festival Events is an event services partner we know and trust. They provide practical support across site infrastructure, logistics and crewing, and their hands-on approach fits well with how we like to work on the ground.",
                     initials: "FE",
+                  },
+                  {
+                    label: "Sussex Concepts CIC",
+                    copy: "Sussex Concepts CIC is a community interest company based in St Leonards-on-Sea, East Sussex, focusing on community development and local events. We are glad to collaborate with a partner that puts community benefit at the heart of its work.",
+                    initials: "SC",
                   },
                 ].map((p) => (
                   <article
@@ -824,11 +829,22 @@ function Index() {
                     className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm"
                   >
                     <div className="flex h-36 w-full items-center justify-center bg-white rounded-xl">
-                      <div className="flex h-28 w-28 items-center justify-center rounded-2xl bg-navy/10">
-                        <span className="text-3xl font-bold tracking-tight text-navy">
-                          {p.initials}
-                        </span>
-                      </div>
+                      {p.logo ? (
+                        <img
+                          src={p.logo}
+                          alt={`${p.label} logo`}
+                          loading="lazy"
+                          width={240}
+                          height={240}
+                          className="h-auto max-h-32 w-auto max-w-[70%] rounded-xl object-contain"
+                        />
+                      ) : (
+                        <div className="flex h-28 w-28 items-center justify-center rounded-2xl bg-navy/10">
+                          <span className="text-3xl font-bold tracking-tight text-navy">
+                            {p.initials}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <h3 className="mt-6 text-center text-lg font-semibold text-navy">
                       {p.label}
@@ -851,6 +867,7 @@ function Index() {
                   </article>
                 ))}
               </div>
+
             </div>
 
             {/* Google Reviews CTA */}
