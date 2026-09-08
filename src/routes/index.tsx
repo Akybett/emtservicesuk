@@ -805,6 +805,52 @@ function Index() {
                   </article>
                 ))}
               </div>
+              <div className="mx-auto mt-6 grid max-w-3xl gap-6 sm:grid-cols-2">
+                {[
+                  {
+                    label: "Martlet Productions",
+                    href: "https://martlet-productions.co.uk/",
+                    copy: "Martlet Productions is a creative event production partner we are glad to work alongside. They bring thoughtful production support and technical experience, helping events run smoothly from planning through to the show itself.",
+                    initials: "MP",
+                  },
+                  {
+                    label: "Festival Events",
+                    copy: "Festival Events is an event services partner we know and trust. They provide practical support across site infrastructure, logistics and crewing, and their hands-on approach fits well with how we like to work on the ground.",
+                    initials: "FE",
+                  },
+                ].map((p) => (
+                  <article
+                    key={p.label}
+                    className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm"
+                  >
+                    <div className="flex h-36 w-full items-center justify-center bg-white rounded-xl">
+                      <div className="flex h-28 w-28 items-center justify-center rounded-2xl bg-navy/10">
+                        <span className="text-3xl font-bold tracking-tight text-navy">
+                          {p.initials}
+                        </span>
+                      </div>
+                    </div>
+                    <h3 className="mt-6 text-center text-lg font-semibold text-navy">
+                      {p.label}
+                    </h3>
+                    <p className="mt-3 text-center text-sm leading-relaxed text-muted-foreground">
+                      {p.copy}
+                    </p>
+                    {p.href && (
+                      <p className="mt-5 text-center">
+                        <a
+                          href={p.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
+                        >
+                          Visit martlet-productions.co.uk →
+                        </a>
+                      </p>
+                    )}
+                  </article>
+                ))}
+              </div>
             </div>
 
             {/* Google Reviews CTA */}
