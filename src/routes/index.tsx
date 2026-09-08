@@ -144,13 +144,13 @@ const services = [
     icon: Users,
     title: "Professional Stewarding",
     image: imgStewards,
-    copy: "We bring in specialist stewards for each event rather than maintaining a permanent roster. This keeps us flexible and ensures the right personnel are matched to the right event. Our stewards come to us through personal recommendation and are vetted directly — not sourced from an agency pool.",
+    copy: "We bring in specialist stewards for each event rather than maintaining a permanent roster. This keeps us flexible and ensures the right personnel are matched to the right event. Our stewards come to us through personal recommendation and are vetted directly, not sourced from an agency pool.",
   },
   {
     icon: Flame,
-    title: "Fire Safety Operations",
+    title: "Fire Safety",
     image: imgFire,
-    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. Andy holds a NEBOSH certification — a recognised qualification in occupational health, safety and risk management — applied to every event we cover.",
+    copy: "Fire safety planning and on-site compliance, structured in accordance with current legislation and industry guidance. One of our directors holds a NEBOSH certification — a recognised qualification in occupational health, safety and risk management — applied to every event we cover.",
   },
 ];
 
@@ -186,27 +186,27 @@ const eventTypes = [
 
 const foundations = [
   {
-    title: "Tailored Staffing & Vetting",
+    title: "Tailored staffing & vetting",
     copy: "Rather than drawing from large agency pools, we build teams suited to each event. Operatives come to us through personal recommendation and direct approach, are vetted by the directors, and have their references followed up. We are straightforward about our capacity and will not overpromise on numbers.",
   },
   {
-    title: "Industry-Recognised Qualifications",
-    copy: "Our planning is guided by recognised credentials held at director level, including NEBOSH and Level 4 Safeguarding. We are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
+    title: "Industry-recognised qualifications",
+    copy: "Our planning is guided by recognised credentials held at director level, including NEBOSH and Level 5 Safeguarding. We are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
   },
   {
-    title: "A Hands-On Approach",
-    copy: "As co-owners, Sid and Andy try to be directly involved in the operation. Subject to availability, you will often find us working on the ground alongside the team as team leads or extra hands — that practical approach is how we have always preferred to operate.",
+    title: "A hands-on approach",
+    copy: "As co-owners, the directors try to be directly involved in the operation. Subject to availability, you will often find them working on the ground alongside the team as team leads or extra hands. That practical approach is how we have always preferred to operate.",
   },
   {
-    title: "Experienced, Approachable Teams",
-    copy: "Most of our team bring a wealth of life experience and a seasoned professional background to their work. We value that maturity — the ability to read a situation calmly, engage with people respectfully, and de-escalate where needed.",
+    title: "Experienced, approachable teams",
+    copy: "Most of our team bring plenty of life experience and a solid professional background to their work. We value that maturity: the ability to read a situation calmly, engage with people respectfully, and de-escalate where needed.",
   },
   {
-    title: "Fair Pricing & Transparent Value",
+    title: "Fair pricing & transparent value",
     copy: "Properly trained, vetted and fairly paid teams cost money, and our charges reflect that. We will not race to the bottom on price where public safety is concerned. Pricing is always transparent and matched to the cover your event actually needs.",
   },
   {
-    title: "Operating to Recognised Standards",
+    title: "Operating to recognised standards",
     copy: (
       <>
         We plan and manage events in line with the{" "}
@@ -232,12 +232,12 @@ const foundations = [
     ),
   },
   {
-    title: "Inclusive by Necessity",
+    title: "Inclusive by necessity",
     copy: "We try to build teams that reflect the crowds they manage. Understanding the people in front of you matters, and we have found that diverse, well-matched teams tend to perform better in complex crowd environments.",
   },
   {
-    title: "Honesty & Data Protection",
-    copy: "We are registered with the Information Commissioner's Office (ICO), so any data you share is held securely under current legislation. We also try to know our limits — if a project is beyond what we can deliver to our standard, we will say so and step aside rather than let an organiser down.",
+    title: "Honesty & data protection",
+    copy: "We are registered with the Information Commissioner's Office (ICO), so any data you share is held securely under current legislation. We also try to know our limits. If a project is beyond what we can deliver to our standard, we will say so and step aside rather than let an organiser down.",
   },
 ];
 
@@ -488,17 +488,17 @@ function Index() {
           />
 
           <h1 className="mx-auto mt-10 max-w-3xl text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Event Safety,
+            Event safety,
             <br />
-            Built on Decades of Experience.
+            built on decades of experience.
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-balance text-base leading-relaxed text-white/75 sm:text-lg">
             A small, owner-operated firm led by two directors with a combined 35+ years
-            of ground-level experience — clear about what we do, transparent about how
-            we work, and personally invested in every event we cover.
+            of ground-level experience. We are clear about what we do, transparent about how
+            we work, and invested in every event we cover.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-balance text-xs uppercase tracking-[0.2em] text-white/80">
-            Independent private event safety provider.
+            Based in the South East · covering the UK on request
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Button
@@ -532,7 +532,7 @@ function Index() {
             ))}
           </ul>
           <p className="mx-auto mt-6 text-center text-xs uppercase tracking-[0.18em] text-white/80">
-            Based in the South East · Covering the UK on request
+            Based in the South East · working nationally
           </p>
         </div>
       </section>
@@ -542,7 +542,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             kicker="What we do"
-            title="Core Services"
+            title="Core services"
             subtitle="A small, flexible operation. Rather than holding a large permanent roster, we bring in vetted specialists to suit each event. What you always get is direct access to the directors and full accountability for the team we provide."
           />
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -593,7 +593,7 @@ function Index() {
               Types of events we cover
             </h3>
             <p className="mx-auto mt-4 max-w-3xl text-center text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
-              From intimate gatherings to large-scale events
+              From community gatherings to larger shows
             </p>
             <div className="mx-auto mt-12 grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {eventTypes.map((group) => (
@@ -622,8 +622,7 @@ function Index() {
         <div className="mt-24 bg-navy-deep py-16 text-white">
           <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
             <p className="text-base leading-relaxed text-white/80 sm:text-lg">
-              Among the events we have been proud to support are cultural occasions
-              such as the{" "}
+              We have supported events including the{" "}
               <a
                 href="https://www.gofundme.com/f/the-revival-of-eastbourne-lammas-festival"
                 target="_blank"
@@ -668,7 +667,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             kicker="Foundations"
-            title="The Foundation of Our Service"
+            title="The foundation of our service"
             subtitle="We are not a large company, and we do not pretend to be. These are the principles the directors of EMT Services have worked to every day across a combined 35+ years in the industry."
           />
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -694,7 +693,7 @@ function Index() {
             {/* Friends we work with */}
             <div className="mt-16">
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-                Friends We Work With
+                Friends we work with
               </h2>
               <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-2">
                 {[
@@ -710,7 +709,7 @@ function Index() {
                     label: "Coda Pharmacy",
                     logo: codaLogoAsset.url,
                     linkText: "Visit codapharmacy.co.uk →",
-                    copy: "We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.",
+                    copy: "We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. They are community-focused with a reliable, person-centred approach to healthcare.",
                   },
                 ].map((f) => (
                   <article
@@ -759,12 +758,11 @@ function Index() {
             {/* Our network of partners & allies */}
             <div className="mt-16 rounded-3xl bg-muted/60 p-8 sm:p-10 lg:p-12">
               <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-                Our Network of Partners &amp; Allies
+                Our network of partners &amp; allies
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
-                Collaboration drives everything we do. When an event calls for more
-                hands or specialist support, we work alongside trusted companies we
-                know and rate — so you get one joined-up, dependable team.
+                We work alongside trusted companies we know and rate when an event needs
+                more hands or specialist support, so you get one joined-up, dependable team.
               </p>
               <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {[
@@ -833,8 +831,8 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             kicker="Track record"
-            title="Events We Have Covered"
-            subtitle="A representative cross-section of the work we do — from small community events to larger gatherings. We do not pick and choose what to show based on scale."
+            title="Events we have covered"
+            subtitle="A representative cross-section of the work we do, from small community events to larger gatherings. We do not pick and choose what to show based on scale."
             align="left"
           />
           <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
@@ -983,7 +981,7 @@ function Index() {
 
             <aside className="rounded-2xl border border-border bg-card p-7 shadow-sm">
               <h3 className="text-2xl font-semibold tracking-tight text-navy">
-                Follow Us
+                Follow us
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 We share updates, event coverage, and behind-the-scenes content on our
@@ -1048,7 +1046,7 @@ function Index() {
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
           <SectionHeading
             kicker="FAQ"
-            title="Common Questions"
+            title="Common questions"
             subtitle="Straight answers to the things people ask us most before making an enquiry."
           />
           <Accordion type="single" collapsible className="mt-12 space-y-3">
@@ -1086,7 +1084,7 @@ function Index() {
       {/* Contact */}
       <section id="contact" className="bg-background py-24 lg:py-32">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
-          <SectionHeading kicker="Contact" title="Get in Touch" />
+          <SectionHeading kicker="Contact" title="Get in touch" />
           <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_1.3fr]">
             <div>
               <p className="text-sm leading-relaxed text-muted-foreground">
@@ -1117,10 +1115,10 @@ function Index() {
               </div>
               <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-                  Areas We Cover
+                  Areas we cover
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground">
-                  Based in the <span className="font-semibold text-navy">South East of England</span> — our home patch for festivals, castle and estate events, and cultural gatherings.
+                  Based in the <span className="font-semibold text-navy">South East of England</span>, our home patch for festivals, castle and estate events, and cultural gatherings.
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   We cover events across the wider UK on request. Get in touch and we will let you know whether we are the right fit for your location and dates.
@@ -1256,7 +1254,7 @@ function Index() {
 function MobileHome({ onShowFull }: { onShowFull: () => void }) {
   const bullets = [
     { icon: Shield, title: "SIA-Licensed Security", copy: "Personally vetted operatives with genuine operational background." },
-    { icon: HeartPulse, title: "Medical & First Aid", copy: "On-site medical planning and first aid cover for events of all sizes." },
+    { icon: HeartPulse, title: "Medical & First Aid Cover", copy: "On-site medical planning and first aid cover for events of all sizes." },
     { icon: Users, title: "Professional Stewarding", copy: "Specialist stewards matched to your event, not sourced from an agency pool." },
     { icon: Flame, title: "Fire Safety", copy: "NEBOSH-led fire safety planning and on-site compliance." },
   ];
@@ -1421,7 +1419,7 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
           View full site →
         </button>
         <p className="mt-6 text-center text-xs text-white/60">
-          © {new Date().getFullYear()} EMT Services. Independent UK event safety company.
+          © {new Date().getFullYear()} EMT Services. Independent private event medical, security and safety services across the UK.
         </p>
         <ul className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-white/70">
           <li><Link to="/privacy" className="hover:text-white">Privacy</Link></li>
