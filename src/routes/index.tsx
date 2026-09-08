@@ -532,7 +532,7 @@ function Index() {
             ))}
           </ul>
           <p className="mx-auto mt-6 text-center text-xs uppercase tracking-[0.18em] text-white/80">
-            Based in the South East · Covering the UK on request
+            Based in the South East · working nationally
           </p>
         </div>
       </section>
