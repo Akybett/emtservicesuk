@@ -1442,6 +1442,56 @@ function MobileHome({ onShowFull }: { onShowFull: () => void }) {
         </div>
       </section>
 
+      {/* Network of partners & allies */}
+      <section className="bg-muted/60 px-5 py-10">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          Our network of partners &amp; allies
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Event companies and specialist teams we are pleased to work alongside and support.
+        </p>
+        <div className="mt-5 grid grid-cols-2 gap-3">
+          {[
+            { label: "Grey Collective", logo: "/Greg_Collective.jpg" },
+            { label: "OP FOR Security Services", logo: "/OP_FOR_-_Secuirty_Servcies.jpg" },
+            { label: "Adapt Security & Medical", logo: "/Adapt_Security_and_Medical.jpg" },
+            { label: "Martlet Productions", logo: "/martlet-logo.png", href: "https://martlet-productions.co.uk/" },
+            { label: "Sussex Concepts CIC", logo: "/sussex-concepts-logo.webp", href: "https://sussexconcepts.co.uk/" },
+          ].map((p) => {
+            const img = (
+              <div className="flex h-24 items-center justify-center rounded-2xl border border-border bg-card p-3 shadow-sm">
+                <img
+                  src={p.logo}
+                  alt={`${p.label} logo`}
+                  loading="lazy"
+                  width={160}
+                  height={120}
+                  className="h-auto max-h-20 w-auto max-w-[90%] object-contain"
+                />
+              </div>
+            );
+            return (
+              <div key={p.label}>
+                {p.href ? (
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit ${p.label}`}
+                    className="block"
+                  >
+                    {img}
+                  </a>
+                ) : (
+                  img
+                )}
+                <p className="mt-2 text-center text-xs font-medium text-navy">{p.label}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="mobile-contact" className="px-5 py-10">
         <h2 className="text-2xl font-bold text-navy">Get in touch</h2>
