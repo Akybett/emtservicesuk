@@ -818,7 +818,7 @@ function Index() {
                     logo: "/sussex-concepts-logo.webp",
                     copy: "Sussex Concepts CIC is a community interest company and event organiser in its own right, based in St Leonards-on-Sea, East Sussex, focusing on community development and local events. We are pleased to work alongside them and support their community-focused work.",
                   },
-                ].map((p) => (
+                ].map((p: { label: string; href?: string; logo?: string; initials?: string; copy: string }) => (
                   <article
                     key={p.label}
                     className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm"
