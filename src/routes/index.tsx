@@ -856,7 +856,7 @@ function Index() {
                           rel="noopener noreferrer"
                           className="text-sm font-semibold text-navy underline underline-offset-4 hover:text-navy/80"
                         >
-                          Visit martlet-productions.co.uk →
+                          Visit {new URL(p.href).hostname.replace(/^www\./, "")} →
                         </a>
                       </p>
                     )}
