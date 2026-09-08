@@ -756,6 +756,59 @@ function Index() {
               </div>
             </div>
 
+            {/* Our network of partners & allies */}
+            <div className="mt-16">
+              <h2 className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+                Our Network of Partners &amp; Allies
+              </h2>
+              <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
+                Collaboration drives everything we do. When an event calls for more
+                hands or specialist support, we work alongside trusted companies we
+                know and rate — so you get one joined-up, dependable team.
+              </p>
+              <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {[
+                  {
+                    label: "Adapt Security & Medical",
+                    logo: "/Adapt_Security_and_Medical.jpg",
+                    copy: "A like-minded security and medical provider we are glad to call on when an event needs extra capacity or specialist cover.",
+                  },
+                  {
+                    label: "Grey Collective",
+                    logo: "/Greg_Collective.jpg",
+                    copy: "A creative collective we enjoy collaborating with — bringing people, ideas and events together across the community.",
+                  },
+                  {
+                    label: "OP FOR Security Services",
+                    logo: "/OP_FOR_-_Secuirty_Servcies.jpg",
+                    copy: "A professional security services partner whose standards match our own — trusted allies on larger and more demanding events.",
+                  },
+                ].map((p) => (
+                  <article
+                    key={p.label}
+                    className="flex flex-col rounded-2xl border border-border bg-navy-deep p-8 shadow-sm"
+                  >
+                    <div className="flex h-36 w-full items-center justify-center">
+                      <img
+                        src={p.logo}
+                        alt={`${p.label} logo`}
+                        loading="lazy"
+                        width={240}
+                        height={240}
+                        className="h-auto max-h-32 w-auto max-w-[70%] rounded-xl object-contain"
+                      />
+                    </div>
+                    <h3 className="mt-6 text-center text-lg font-semibold text-white">
+                      {p.label}
+                    </h3>
+                    <p className="mt-3 text-center text-sm leading-relaxed text-white/70">
+                      {p.copy}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
+
             {/* Google Reviews CTA */}
             <div className="mt-10 flex flex-col items-center gap-3 text-center">
               <p className="text-sm text-muted-foreground">
