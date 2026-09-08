@@ -1046,7 +1046,7 @@ function Index() {
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
           <SectionHeading
             kicker="FAQ"
-            title="Common Questions"
+            title="Common questions"
             subtitle="Straight answers to the things people ask us most before making an enquiry."
           />
           <Accordion type="single" collapsible className="mt-12 space-y-3">
