@@ -769,11 +769,6 @@ function Index() {
               <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
-                    label: "Adapt Security & Medical",
-                    logo: "/Adapt_Security_and_Medical.jpg",
-                    copy: "A like-minded security and medical provider we are glad to call on when an event needs extra capacity or specialist cover.",
-                  },
-                  {
                     label: "Grey Collective",
                     logo: "/Greg_Collective.jpg",
                     copy: "A creative collective we enjoy collaborating with — bringing people, ideas and events together across the community.",
@@ -782,6 +777,11 @@ function Index() {
                     label: "OP FOR Security Services",
                     logo: "/OP_FOR_-_Secuirty_Servcies.jpg",
                     copy: "A professional security services partner whose standards match our own — trusted allies on larger and more demanding events.",
+                  },
+                  {
+                    label: "Adapt Security & Medical",
+                    logo: "/Adapt_Security_and_Medical.jpg",
+                    copy: "A like-minded security and medical provider we are glad to call on when an event needs extra capacity or specialist cover.",
                   },
                 ].map((p) => (
                   <article
