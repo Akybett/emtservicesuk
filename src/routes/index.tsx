@@ -709,7 +709,7 @@ function Index() {
                     label: "Coda Pharmacy",
                     logo: codaLogoAsset.url,
                     linkText: "Visit codapharmacy.co.uk →",
-                    copy: "We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. Extremely community-focused with a great dynamic team, they provide a professional, highly reliable service with a meticulous, person-centred approach to healthcare.",
+                    copy: "We have collaborated with Coda Pharmacy for some time and endorse them wholeheartedly. They are community-focused with a reliable, person-centred approach to healthcare.",
                   },
                 ].map((f) => (
                   <article
