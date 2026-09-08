@@ -805,7 +805,7 @@ function Index() {
                   </article>
                 ))}
               </div>
-              <div className="mx-auto mt-6 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mx-auto mt-6 grid max-w-3xl gap-6 sm:grid-cols-2">
                 {[
                   {
                     label: "Martlet Productions",
@@ -814,16 +814,11 @@ function Index() {
                     copy: "Martlet Productions is an event company in its own right, dedicated to bringing medieval and heritage themes to life through immersive, high-quality events. We are pleased to work alongside them and support their vision of authentic, creative and exceptionally delivered events.",
                   },
                   {
-                    label: "Festival Events",
-                    copy: "Festival Events is an event company in its own right, providing practical support across site infrastructure, logistics and crewing. We are glad to work alongside them and share the same hands-on approach on the ground.",
-                    initials: "FE",
-                  },
-                  {
                     label: "Sussex Concepts CIC",
+                    logo: "/sussex-concepts-logo.webp",
                     copy: "Sussex Concepts CIC is a community interest company and event organiser in its own right, based in St Leonards-on-Sea, East Sussex, focusing on community development and local events. We are pleased to work alongside them and support their community-focused work.",
-                    initials: "SC",
                   },
-                ].map((p) => (
+                ].map((p: { label: string; href?: string; logo?: string; initials?: string; copy: string }) => (
                   <article
                     key={p.label}
                     className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm"
