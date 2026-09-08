@@ -774,12 +774,12 @@ function Index() {
                   {
                     label: "OP FOR Security Services",
                     logo: "/OP_FOR_-_Secuirty_Servcies.jpg",
-                    copy: "A professional security services partner whose standards match our own — trusted allies on larger and more demanding events.",
+                    copy: "OP FOR Security Services is a professional security services partner whose standards match our own. We are glad to count them as trusted allies on larger and more demanding events, drawing on their experience when an event needs extra capacity, specialist skills or a wider security footprint.",
                   },
                   {
                     label: "Adapt Security & Medical",
                     logo: "/Adapt_Security_and_Medical.jpg",
-                    copy: "A like-minded security and medical provider we are glad to call on when an event needs extra capacity or specialist cover.",
+                    copy: "Adapt Security & Medical is a like-minded security and medical provider we are glad to call on when an event needs extra capacity or specialist cover. Their approach aligns with ours, making it straightforward to combine teams and deliver joined-up medical and security support at scale.",
                   },
                 ].map((p) => (
                   <article
