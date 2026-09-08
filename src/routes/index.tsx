@@ -761,8 +761,8 @@ function Index() {
                 Our network of partners &amp; allies
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
-                We work alongside trusted companies we know and rate when an event needs
-                more hands or specialist support, so you get one joined-up, dependable team.
+                We are pleased to work alongside event companies, community organisations and specialist
+                teams who share our values. Collaboration is at the heart of how we operate.
               </p>
               <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {[
@@ -811,16 +811,16 @@ function Index() {
                     label: "Martlet Productions",
                     href: "https://martlet-productions.co.uk/",
                     logo: "/martlet-logo.png",
-                    copy: "Martlet Productions is a creative partner dedicated to bringing medieval and heritage themes to life through immersive, high-quality events. Driven by a passion for authenticity, creativity and exceptional delivery, they work across event project management, safety, risk assessments and compliance, making them a natural fit for historically grounded events that need to be both engaging and professionally run.",
+                    copy: "Martlet Productions is an event company in its own right, dedicated to bringing medieval and heritage themes to life through immersive, high-quality events. We are pleased to work alongside them and support their vision of authentic, creative and exceptionally delivered events.",
                   },
                   {
                     label: "Festival Events",
-                    copy: "Festival Events is an event services partner we know and trust. They provide practical support across site infrastructure, logistics and crewing, and their hands-on approach fits well with how we like to work on the ground.",
+                    copy: "Festival Events is an event company in its own right, providing practical support across site infrastructure, logistics and crewing. We are glad to work alongside them and share the same hands-on approach on the ground.",
                     initials: "FE",
                   },
                   {
                     label: "Sussex Concepts CIC",
-                    copy: "Sussex Concepts CIC is a community interest company based in St Leonards-on-Sea, East Sussex, focusing on community development and local events. We are glad to collaborate with a partner that puts community benefit at the heart of its work.",
+                    copy: "Sussex Concepts CIC is a community interest company and event organiser in its own right, based in St Leonards-on-Sea, East Sussex, focusing on community development and local events. We are pleased to work alongside them and support their community-focused work.",
                     initials: "SC",
                   },
                 ].map((p) => (
