@@ -769,7 +769,7 @@ function Index() {
                   {
                     label: "Grey Collective",
                     logo: "/Greg_Collective.jpg",
-                    copy: "A creative collective we enjoy collaborating with — bringing people, ideas and events together across the community.",
+                    copy: "The long-term vision behind their collective model is to bring together specialists across a range of disciplines, integrating experts in facilities management, live events, communications, and other complementary fields to deliver a truly comprehensive service.",
                   },
                   {
                     label: "OP FOR Security Services",
