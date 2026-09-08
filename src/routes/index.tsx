@@ -186,27 +186,27 @@ const eventTypes = [
 
 const foundations = [
   {
-    title: "Tailored Staffing & Vetting",
+    title: "Tailored staffing & vetting",
     copy: "Rather than drawing from large agency pools, we build teams suited to each event. Operatives come to us through personal recommendation and direct approach, are vetted by the directors, and have their references followed up. We are straightforward about our capacity and will not overpromise on numbers.",
   },
   {
-    title: "Industry-Recognised Qualifications",
-    copy: "Our planning is guided by recognised credentials held at director level, including NEBOSH and Level 4 Safeguarding. We are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
+    title: "Industry-recognised qualifications",
+    copy: "Our planning is guided by recognised credentials held at director level, including NEBOSH and Level 5 Safeguarding. We are also registered trainers for Highfield and Pro Trainings, and members of the Association of Healthcare Trainers (AOHT).",
   },
   {
-    title: "A Hands-On Approach",
-    copy: "As co-owners, Sid and Andy try to be directly involved in the operation. Subject to availability, you will often find us working on the ground alongside the team as team leads or extra hands — that practical approach is how we have always preferred to operate.",
+    title: "A hands-on approach",
+    copy: "As co-owners, the directors try to be directly involved in the operation. Subject to availability, you will often find them working on the ground alongside the team as team leads or extra hands. That practical approach is how we have always preferred to operate.",
   },
   {
-    title: "Experienced, Approachable Teams",
-    copy: "Most of our team bring a wealth of life experience and a seasoned professional background to their work. We value that maturity — the ability to read a situation calmly, engage with people respectfully, and de-escalate where needed.",
+    title: "Experienced, approachable teams",
+    copy: "Most of our team bring plenty of life experience and a solid professional background to their work. We value that maturity: the ability to read a situation calmly, engage with people respectfully, and de-escalate where needed.",
   },
   {
-    title: "Fair Pricing & Transparent Value",
+    title: "Fair pricing & transparent value",
     copy: "Properly trained, vetted and fairly paid teams cost money, and our charges reflect that. We will not race to the bottom on price where public safety is concerned. Pricing is always transparent and matched to the cover your event actually needs.",
   },
   {
-    title: "Operating to Recognised Standards",
+    title: "Operating to recognised standards",
     copy: (
       <>
         We plan and manage events in line with the{" "}
@@ -232,12 +232,12 @@ const foundations = [
     ),
   },
   {
-    title: "Inclusive by Necessity",
+    title: "Inclusive by necessity",
     copy: "We try to build teams that reflect the crowds they manage. Understanding the people in front of you matters, and we have found that diverse, well-matched teams tend to perform better in complex crowd environments.",
   },
   {
-    title: "Honesty & Data Protection",
-    copy: "We are registered with the Information Commissioner's Office (ICO), so any data you share is held securely under current legislation. We also try to know our limits — if a project is beyond what we can deliver to our standard, we will say so and step aside rather than let an organiser down.",
+    title: "Honesty & data protection",
+    copy: "We are registered with the Information Commissioner's Office (ICO), so any data you share is held securely under current legislation. We also try to know our limits. If a project is beyond what we can deliver to our standard, we will say so and step aside rather than let an organiser down.",
   },
 ];
 
