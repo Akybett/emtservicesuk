@@ -542,7 +542,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             kicker="What we do"
-            title="Core Services"
+            title="Core services"
             subtitle="A small, flexible operation. Rather than holding a large permanent roster, we bring in vetted specialists to suit each event. What you always get is direct access to the directors and full accountability for the team we provide."
           />
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
